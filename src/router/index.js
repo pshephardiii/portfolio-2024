@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import routes from './routes'
 import NavBar from '../components/NavBar/NavBar'
-import styles from './AppRouter.module.scss'
+import styles from './App.module.scss'
 
 const AppRouter = () => {
 
