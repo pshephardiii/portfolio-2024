@@ -6,7 +6,6 @@ import styles from './AppRouter.module.scss'
 const AppRouter = () => {
 
     return (
-
         <Router>
             <main className={styles.App}>
                 <NavBar></NavBar>
