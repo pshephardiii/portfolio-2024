@@ -1,6 +1,5 @@
 const Contact = require('../../models/contact')
 
-
 module.exports = {
     create,
     jsonContact
