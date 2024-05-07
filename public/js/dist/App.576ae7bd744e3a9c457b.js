@@ -82,7 +82,47 @@ const NavBar = () => {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function SkillList() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "This is the skill list!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "skill 1"), /*#__PURE__*/React.createElement("li", null, "skill 2"), /*#__PURE__*/React.createElement("li", null, "skill 3")));
+  const skills = ['JavaScript', 'HTML', 'CSS', 'MongoDB', 'JSON', 'React', 'Express.js', 'JSX', 'SCSS'];
+  const skillsIcons = ['https://i.imgur.com/fNTr29D.png', 'https://i.imgur.com/LwpNbJR.png', 'https://i.imgur.com/pAxoxNC.png', 'https://i.imgur.com/xPPh7jP.png', 'https://i.imgur.com/CyBT2em.png', 'https://i.imgur.com/lraKJkb.png', 'https://i.imgur.com/FsLutvP.png', 'https://i.imgur.com/IgCH7Hq.png', 'https://i.imgur.com/YVCimXg.png'];
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("ul", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillList
+  }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[0],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[0]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[1],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[1]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[2],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[2]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[3],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[3]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[4],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[4]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[5],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[5]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[6],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[6]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[7],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[7]
+  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+    src: skillsIcons[8],
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
+    title: skills[8]
+  }))));
 }
 
 /***/ }),
@@ -372,9 +412,17 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.s6wolvpV50cfcaoAIN0U {
+  list-style: none;
+}
+.s6wolvpV50cfcaoAIN0U .ww96wplc3iiswNHki006 {
+  max-width: 3rem;
+}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,gBAAA;AACJ;AACI;EACI,eAAA;AACR","sourcesContent":[".skillList {\n    list-style: none;\n\n    .icon {\n        max-width: 3rem;\n    }\n}"],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"skillList": `s6wolvpV50cfcaoAIN0U`,
+	"icon": `ww96wplc3iiswNHki006`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -677,8 +725,11 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /*!********************************************************!*\
   !*** ./src/components/SkillList/SkillList.module.scss ***!
   \********************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
@@ -718,7 +769,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 
-       /* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SkillList_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -1200,4 +1251,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8ec1eaf8b46fc34c90e338391877b7b2.js.map
+//# sourceMappingURL=App.92e9c1043c25a4f94a0ef5e294186869.js.map
