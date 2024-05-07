@@ -64,10 +64,63 @@ function AttributesList() {
 /* harmony export */   "default": () => (/* binding */ ContactForm)
 /* harmony export */ });
 /* harmony import */ var _ContactForm_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactForm.module.scss */ "./src/components/ContactForm/ContactForm.module.scss");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utilities_contacts_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/contacts-api */ "./src/utilities/contacts-api.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
 
 function ContactForm() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "This is the contact form"));
+  const [formData, setFormData] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      await _utilities_contacts_api__WEBPACK_IMPORTED_MODULE_2__.createContact(formData);
+      alert('Thank you for reaching out! I will be in touch shortly.');
+    } catch (error) {
+      alert('Please leave a name and email if you would like to reach out. Thank you!');
+      console.error(error);
+    }
+  };
+  const handleChange = e => {
+    setFormData(_objectSpread(_objectSpread({}, formData), {}, {
+      [e.target.name]: e.target.value
+    }));
+  };
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Contact Form"), /*#__PURE__*/React.createElement("form", {
+    onSubmit: handleSubmit,
+    autoComplete: "off"
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
+    value: formData.name,
+    placeholder: "Name",
+    type: "text",
+    name: "name",
+    onChange: handleChange
+  }), /*#__PURE__*/React.createElement("input", {
+    value: formData.email,
+    placeholder: "Email",
+    type: "text",
+    name: "email",
+    onChange: handleChange
+  }), /*#__PURE__*/React.createElement("input", {
+    value: formData.message,
+    placeholder: "Message",
+    type: "text",
+    name: "message",
+    onChange: handleChange
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "submit"
+  }, "Submit"))));
 }
 
 /***/ }),
@@ -197,7 +250,9 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 function AboutPage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].AboutPage
-  }, /*#__PURE__*/React.createElement("h1", null, "This is the About Page"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, /*#__PURE__*/React.createElement("h1", null, "About Me"), /*#__PURE__*/React.createElement("img", {
+    src: "https://i.imgur.com/hWb88UB.jpeg"
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech."), /*#__PURE__*/React.createElement("p", null, "My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways. My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital \"nudging,\" and the use of algorithms to determine content viewability."), /*#__PURE__*/React.createElement("p", null, "My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action. Finally, my familiarity with professional conference presentations has drastically improved my public speaking skills, confidence, and my ability to \"read a room.\""), /*#__PURE__*/React.createElement("p", null, "It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software engineering landscape!")), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -219,7 +274,9 @@ function AboutPage() {
 function ContactPage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].ContactPage
-  }, /*#__PURE__*/React.createElement("h1", null, "This is the Contact Page"), /*#__PURE__*/React.createElement(_components_ContactForm_ContactForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, /*#__PURE__*/React.createElement("h1", null, "Please fill out the form below or send me an email at ", /*#__PURE__*/React.createElement("a", {
+    href: "mailto:paulshephard598@gmail.com"
+  }, "paulshephard598@gmail.com")), /*#__PURE__*/React.createElement(_components_ContactForm_ContactForm__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -241,7 +298,24 @@ function ContactPage() {
 function HomePage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].HomePage
-  }, /*#__PURE__*/React.createElement("h1", null, "This is the Home Page"), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("img", {
+    src: "https://i.imgur.com/9eG1sV9.png"
+  }), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Engineer"), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the contact page above!"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
+    href: ""
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "https://i.imgur.com/5j7wzpH.png",
+    title: "Resume"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://github.com/pshephardiii"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "https://i.imgur.com/wVqeaFz.png",
+    title: "GitHub"
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.linkedin.com/in/paulshephard76/"
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "https://i.imgur.com/gLaHV9t.png",
+    title: "LinkedIn"
+  }))));
 }
 
 /***/ }),
@@ -347,6 +421,34 @@ const routes = [{
   path: '/contact'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
+
+/***/ }),
+
+/***/ "./src/utilities/contacts-api.js":
+/*!***************************************!*\
+  !*** ./src/utilities/contacts-api.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createContact: () => (/* binding */ createContact)
+/* harmony export */ });
+const BASE_URL = '/api/contacts';
+async function createContact(data) {
+  try {
+    const response = await fetch(BASE_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+    const formData = await response.json();
+    return formData;
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 /***/ }),
 
@@ -1312,4 +1414,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.d9e3d81f99292079b9f0b6df103dd831.js.map
+//# sourceMappingURL=App.e0030b447de46a66c9359c6fef796a29.js.map

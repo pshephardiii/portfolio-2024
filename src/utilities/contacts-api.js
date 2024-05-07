@@ -1,7 +1,17 @@
-import sendRequest from './send-request'
-
 const BASE_URL = '/api/contacts'
 
-export function createContact(data) {
-    return sendRequest(BASE_URL, 'POST', data)
+export async function createContact(data) {
+    try {
+        const response = await fetch(BASE_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        const formData = await response.json()
+        return formData
+    } catch (error) {
+        console.error(error)
+    }
 }

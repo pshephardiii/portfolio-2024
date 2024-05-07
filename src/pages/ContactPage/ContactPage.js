@@ -4,7 +4,7 @@ import styles from './ContactPage.module.scss'
 export default function ContactPage(){
     return (
         <main className={styles.ContactPage}>
-            <h1>This is the Contact Page</h1>
+            <h1>Please fill out the form below or send me an email at <a href="mailto:paulshephard598@gmail.com">paulshephard598@gmail.com</a></h1>
             <ContactForm></ContactForm>
         </main>
     )
