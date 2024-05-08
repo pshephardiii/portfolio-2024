@@ -1,0 +1,27 @@
+.NavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 100vw;
+    background-color: lightgrey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    gap: 7.5rem;
+
+    .footerLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .footerIcon {
+            height: 2.75rem; 
+            position: absolute;
+        }
+        .footerIcon:hover {
+            height: 3rem;
+        }
+    }
+}
+
