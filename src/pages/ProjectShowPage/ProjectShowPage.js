@@ -6,7 +6,15 @@ import * as ProjectsAPI from '../../utilities/projects-api'
 
 export default function ProjectShowPage(){
 
-    const [project, setProject] = useState({})
+    const [project, setProject] = useState({
+        name: '',
+        summary: '',
+        tools: '',
+        image: '',
+        description: '',
+        githubLink: '',
+        liveProjectLink: ''
+    })
     const {id} = useParams()
 
     useEffect(function(){
@@ -19,7 +27,7 @@ export default function ProjectShowPage(){
             }
         }
         getProject()
-    })
+    }, [project.name === ''])
 
     return(
         <div>

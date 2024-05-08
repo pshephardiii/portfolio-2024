@@ -30,7 +30,7 @@ async function show(req, res, next){
     try{
         const project = await Project.findById(req.params.id)
         console.log(project)
-        res.locals.project = project
+        res.locals.data.project = project
         next()
     }catch(e){
         res.status(400).json({ msg: e.message })

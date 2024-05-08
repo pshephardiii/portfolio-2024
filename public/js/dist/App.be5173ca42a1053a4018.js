@@ -411,7 +411,15 @@ function HomePage() {
 
 
 function ProjectShowPage() {
-  const [project, setProject] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({});
+  const [project, setProject] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
+    name: '',
+    summary: '',
+    tools: '',
+    image: '',
+    description: '',
+    githubLink: '',
+    liveProjectLink: ''
+  });
   const {
     id
   } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.useParams)();
@@ -425,7 +433,7 @@ function ProjectShowPage() {
       }
     }
     getProject();
-  });
+  }, [project.name === '']);
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "Project Show Page"), /*#__PURE__*/React.createElement(_components_ProjectItem_ProjectItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
     project: project
   }));
@@ -488,7 +496,9 @@ const AppRouter = () => {
     return /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
       key: key,
       path: path,
-      element: /*#__PURE__*/React.createElement(Component, null)
+      element: /*#__PURE__*/React.createElement(Component, {
+        page: key
+      })
     });
   }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, {
     path: "/*",
@@ -595,13 +605,7 @@ async function indexProjects() {
 }
 async function showProject(id) {
   try {
-    const response = await fetch("".concat(BASE_URL, "/").concat(id), {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    });
+    const response = await fetch("".concat(BASE_URL, "/").concat(id));
     const formData = await response.json();
     return formData;
   } catch (error) {
@@ -1801,4 +1805,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.d5e63b8ec51e9dd5cfaa3425db0404d8.js.map
+//# sourceMappingURL=App.cacf6d583abbe2214e2ce958a2c45a46.js.map

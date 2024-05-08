@@ -12,13 +12,7 @@ export async function indexProjects() {
 
 export async function showProject(id) {
     try {
-        const response = await fetch(`${BASE_URL}/${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
+        const response = await fetch(`${BASE_URL}/${id}`)
         const formData = await response.json()
         return formData
     } catch (error) {
