@@ -1,9 +1,27 @@
 const BASE_URL = '/api/projects'
 
-export function indexProjects() {
-    return sendRequest(BASE_URL)
+export async function indexProjects() {
+    try {
+        const response = await fetch(BASE_URL)
+        const formData = await response.json()
+        return formData
+    } catch (error) {
+        console.error(error)
+    }
 }
 
-export function showProject(id) {
-    return sendRequest(`${BASE_URL}/${id}`)
+export async function showProject(id) {
+    try {
+        const response = await fetch(`${BASE_URL}/${id}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        const formData = await response.json()
+        return formData
+    } catch (error) {
+        console.error(error)
+    }
 }
