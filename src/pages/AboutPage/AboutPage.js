@@ -6,6 +6,7 @@ export default function AboutPage(){
         <main className={styles.AboutPage}>
             <h1>About Me</h1>
             <img src='https://i.imgur.com/hWb88UB.jpeg'></img>
+            <AttributesList></AttributesList>
             <div>
                  <p>I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech.</p>
 
@@ -16,8 +17,8 @@ export default function AboutPage(){
                  <p>It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software engineering landscape!</p>
             </div>
             
+            <p>To take a look at my resume, click <a href=''>here!</a></p>
             
-            <AttributesList></AttributesList>
         </main>
     )
 }
