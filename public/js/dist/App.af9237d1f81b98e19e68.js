@@ -168,8 +168,17 @@ const NavBar = () => {
 /* harmony import */ var _ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProjectItem.module.scss */ "./src/components/ProjectItem/ProjectItem.module.scss");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-function ProjectItem(project) {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, project.name));
+function ProjectItem(_ref) {
+  let {
+    project
+  } = _ref;
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, project.name), /*#__PURE__*/React.createElement("h3", null, project.summary), /*#__PURE__*/React.createElement("p", null, project.tools), /*#__PURE__*/React.createElement("img", {
+    src: "".concat(project.image)
+  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
+    href: "".concat(project.githubLink)
+  }, "GitHub Repository"), /*#__PURE__*/React.createElement("a", {
+    href: "".concat(project.liveProjectLink)
+  }, "Live Project Link")), /*#__PURE__*/React.createElement("p", null, project.description));
 }
 
 /***/ }),
@@ -434,9 +443,11 @@ function ProjectShowPage() {
     }
     getProject();
   }, [project.name === '']);
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "Project Show Page"), /*#__PURE__*/React.createElement(_components_ProjectItem_ProjectItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
-    project: project
-  }));
+  if (project.name !== '') {
+    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_ProjectItem_ProjectItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      project: project
+    }));
+  }
 }
 
 /***/ }),
@@ -1805,4 +1816,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.cacf6d583abbe2214e2ce958a2c45a46.js.map
+//# sourceMappingURL=App.adb4afe8d1627fc969061f4feba987c3.js.map

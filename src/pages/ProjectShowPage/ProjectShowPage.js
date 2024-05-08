@@ -29,10 +29,11 @@ export default function ProjectShowPage(){
         getProject()
     }, [project.name === ''])
 
-    return(
-        <div>
-        <p>Project Show Page</p>
-        <ProjectItem project={project}></ProjectItem>
-        </div>
-    )
+    if (project.name !== '') {
+        return(
+            <div>
+                <ProjectItem project={project}></ProjectItem>
+            </div>
+        )
+    }
 }
