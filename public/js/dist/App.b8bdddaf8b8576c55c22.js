@@ -85,12 +85,15 @@ function ContactForm() {
   const [toggle, setToggle] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const handleSubmit = async e => {
     e.preventDefault();
-    try {
-      await _utilities_contacts_api__WEBPACK_IMPORTED_MODULE_2__.createContact(formData);
-      setToggle(false);
-    } catch (error) {
+    if (formData.name !== '' && formData.email !== '') {
+      try {
+        await _utilities_contacts_api__WEBPACK_IMPORTED_MODULE_2__.createContact(formData);
+        setToggle(false);
+      } catch (error) {
+        console.error(error);
+      }
+    } else {
       alert('Please leave a name and email if you would like to reach out. Thank you!');
-      console.error(error);
     }
   };
   const handleChange = e => {
@@ -2005,4 +2008,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.21c34677b35800a6dcfb767bb545a6f4.js.map
+//# sourceMappingURL=App.6c39a143422cfa25f447f5e0758b3413.js.map

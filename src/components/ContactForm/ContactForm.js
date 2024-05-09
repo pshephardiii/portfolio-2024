@@ -16,14 +16,15 @@ export default function ContactForm(){
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        if (formData.name !== '' && formData.email !== '') {
         try {
             await contactsAPI.createContact(formData)
             setToggle(false)
 
         } catch (error) {
-           alert('Please leave a name and email if you would like to reach out. Thank you!')
            console.error(error)
         }
+    } else { alert('Please leave a name and email if you would like to reach out. Thank you!')}
     }
 
     const handleChange = (e) => {
