@@ -82,11 +82,12 @@ function ContactForm() {
     email: '',
     message: ''
   });
+  const [toggle, setToggle] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const handleSubmit = async e => {
     e.preventDefault();
     try {
       await _utilities_contacts_api__WEBPACK_IMPORTED_MODULE_2__.createContact(formData);
-      alert('Thank you for reaching out! I will be in touch shortly.');
+      setToggle(false);
     } catch (error) {
       alert('Please leave a name and email if you would like to reach out. Thank you!');
       console.error(error);
@@ -97,7 +98,13 @@ function ContactForm() {
       [e.target.name]: e.target.value
     }));
   };
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Contact Form"), /*#__PURE__*/React.createElement("form", {
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    async function toggleTrue() {
+      setToggle(true);
+    }
+    toggleTrue();
+  }, []);
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", null, "Contact Form"), toggle ? /*#__PURE__*/React.createElement("form", {
     onSubmit: handleSubmit,
     autoComplete: "off"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
@@ -120,7 +127,7 @@ function ContactForm() {
     onChange: handleChange
   }), /*#__PURE__*/React.createElement("button", {
     type: "submit"
-  }, "Submit"))));
+  }, "Submit"))) : /*#__PURE__*/React.createElement("h3", null, "Thank you for reaching out! I'll be in touch soon."));
 }
 
 /***/ }),
@@ -1998,4 +2005,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.94ab15d14dedcbcd92374dabdbafe964.js.map
+//# sourceMappingURL=App.21c34677b35800a6dcfb767bb545a6f4.js.map

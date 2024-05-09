@@ -11,12 +11,14 @@ export default function ContactForm(){
         message: ''
     })
 
+    const [ toggle, setToggle ] = useState(true)
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
             await contactsAPI.createContact(formData)
-            alert('Thank you for reaching out! I will be in touch shortly.')
+            setToggle(false)
 
         } catch (error) {
            alert('Please leave a name and email if you would like to reach out. Thank you!')
@@ -28,10 +30,18 @@ export default function ContactForm(){
         setFormData({...formData, [e.target.name]: e.target.value })
     }
 
+    useEffect(function () {
+        async function toggleTrue() {
+            setToggle(true)
+        }
+        toggleTrue()
+    }, [])
+
 
     return(
         <div>
             <h2>Contact Form</h2>
+            { toggle ?
             <form onSubmit={handleSubmit} autoComplete="off">
                 <div>
                     <input value={formData.name} placeholder="Name" type="text" name="name" onChange={handleChange}></input>
@@ -39,7 +49,9 @@ export default function ContactForm(){
                     <input value={formData.message} placeholder="Message" type="text" name="message" onChange={handleChange}></input>
                     <button type="submit">Submit</button>
                 </div>
-            </form>
+            </form> :
+            <h3>Thank you for reaching out! I'll be in touch soon.</h3>
+            }
         </div>
     )
 }
