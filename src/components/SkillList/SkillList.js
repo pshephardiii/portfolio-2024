@@ -7,7 +7,7 @@ export default function SkillList(){
     const skillsIcons = ['https://i.imgur.com/fNTr29D.png', 'https://i.imgur.com/LwpNbJR.png', 'https://i.imgur.com/pAxoxNC.png', 'https://i.imgur.com/xPPh7jP.png', 'https://i.imgur.com/CyBT2em.png', 'https://i.imgur.com/lraKJkb.png', 'https://i.imgur.com/FsLutvP.png', 'https://i.imgur.com/IgCH7Hq.png', 'https://i.imgur.com/YVCimXg.png']
 
     return(
-        <div>
+        <div className={styles.skillListContainer}>
             <ul className={styles.skillList}>
                 <li><img src={skillsIcons[0]} className={styles.icon} title={skills[0]}></img></li>
                 <li><img src={skillsIcons[1]} className={styles.icon} title={skills[1]}></img></li>

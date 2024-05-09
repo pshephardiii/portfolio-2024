@@ -1,0 +1,12 @@
+.ProjectList {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .projectImage {
+        width: 50vw;
+        min-width: 25rem;
+    }
+}

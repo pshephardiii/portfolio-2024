@@ -22,24 +22,24 @@ export default function ProjectList(){
     if (projects.length !== 0) {
 
         return(
-            <div>
+            <div className={styles.ProjectList}>
                 <Link to={`/projects/${projects[0]._id}`}><div>
                     <h3>{projects[0].name}</h3>
                     <p>{projects[0].summary}</p>
                     <p>{projects[0].tools}</p>
-                    <img src={projects[0].image}></img>
+                    <img src={projects[0].image} className={styles.projectImage}></img>
                 </div></Link>
                 <Link to={`/projects/${projects[1]._id}`}><div>
                     <h3>{projects[1].name}</h3>
                     <p>{projects[1].summary}</p>
                     <p>{projects[1].tools}</p>
-                    <img src={projects[1].image}></img>
+                    <img src={projects[1].image} className={styles.projectImage}></img>
                 </div></Link>
                 <Link to={`/projects/${projects[2]._id}`}><div>
                     <h3>{projects[2].name}</h3>
                     <p>{projects[2].summary}</p>
                     <p>{projects[2].tools}</p>
-                    <img src={projects[2].image}></img>
+                    <img src={projects[2].image} className={styles.projectImage}></img>
                 </div></Link>
             </div>
         )

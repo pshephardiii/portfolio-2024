@@ -4,7 +4,6 @@ import * as contactsAPI from '../../utilities/contacts-api'
 
 export default function ContactForm(){
 
-
     const [ formData, setFormData ] = useState({
         name: '',
         email: '',
@@ -41,16 +40,18 @@ export default function ContactForm(){
 
     return(
         <div>
-            <h2>Contact Form</h2>
+            <h2 className={styles.formHeader}>Contact Form</h2>
             { toggle ?
-            <form onSubmit={handleSubmit} autoComplete="off">
-                <div>
-                    <input value={formData.name} placeholder="Name" type="text" name="name" onChange={handleChange}></input>
-                    <input value={formData.email} placeholder="Email" type="text" name="email" onChange={handleChange}></input>
-                    <input value={formData.message} placeholder="Message" type="text" name="message" onChange={handleChange}></input>
-                    <button type="submit">Submit</button>
-                </div>
-            </form> :
+            <div className={styles.formContainer}>
+                <form onSubmit={handleSubmit} autoComplete="off" className={styles.contactForm}>
+                
+                    <input className={styles.formInput} value={formData.name} placeholder="Name" type="text" name="name" onChange={handleChange}></input>
+                    <input className={styles.formInput} value={formData.email} placeholder="Email" type="text" name="email" onChange={handleChange}></input>
+                    <input className={styles.formInput} value={formData.message} placeholder="Message" type="text" name="message" onChange={handleChange}></input>
+                    <button className={styles.formSubmit} type="submit">Submit</button>
+                
+                </form>
+            </div> :
             <h3>Thank you for reaching out! I'll be in touch soon.</h3>
             }
         </div>

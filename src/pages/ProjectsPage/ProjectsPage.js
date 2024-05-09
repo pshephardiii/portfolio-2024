@@ -4,7 +4,7 @@ import ProjectList from '../../components/ProjectList/ProjectList'
 export default function ProjectsPage(){
     return (
         <main className={styles.ProjectsPage}>
-            <h1>This is the Projects Page</h1>
+            <h1 className={styles.projectsHeadline}>Projects</h1>
             <ProjectList></ProjectList>
         </main>
     )
