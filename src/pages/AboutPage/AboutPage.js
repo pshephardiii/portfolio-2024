@@ -4,9 +4,13 @@ import styles from './AboutPage.module.scss'
 export default function AboutPage(){
     return (
         <main className={styles.AboutPage}>
-            <h1>About Me</h1>
-            <img src='https://i.imgur.com/hWb88UB.jpeg' className={styles.aboutImage}></img>
-            <AttributesList></AttributesList>
+            <h1 className={styles.aboutHeadline}>About Me</h1>
+            <div className={styles.aboutPageTop}>
+                <img src='https://i.imgur.com/hWb88UB.jpeg' className={styles.aboutImage} title="Paul and Baxter" alt="A man sitting on a chair with a Yorkie on his lap"></img>
+                <p className={styles.aboutCaption}>Pictured: My dog Baxter and I</p>
+                <p className={styles.aboutQuote}>"Paul is the greatest coder alive." - Baxter, Ph.D</p>
+                <AttributesList></AttributesList>
+            </div>
             <div className={styles.aboutSummary}>
                  <p>I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech.</p>
 
