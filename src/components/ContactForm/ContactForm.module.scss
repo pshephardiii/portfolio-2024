@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .formHeader {
+        font-family: "Courier Prime", monospace;
+        font-weight: lighter;
+        font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+    }
+
+    .formContainer {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        border: 2px solid darkblue;
+        padding: 2rem;
+
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .formInput {
+                border-radius: 5px;
+                border: 2px solid darkblue;
+                font-family: 'Courier Prime', monospace;
+                font-size: clamp(1rem, 2vw, 1.5rem);
+            }
+
+            .formSubmit {
+                font-family: "Montserrat", serif;
+                font-weight: bolder;
+                background-color: lightgray;
+                border: 2px solid darkblue;
+                border-radius: 5px;
+                font-size: clamp(1rem, 2vw, 1.5rem);
+                width: 10rem;
+            }
+            .formSubmit:hover {
+                color: white;
+                background-color: darkblue;
+                border: 2px solid lightgray;
+                cursor: pointer;
+            }
+        }
+    }
+}

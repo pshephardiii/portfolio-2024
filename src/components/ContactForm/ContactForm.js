@@ -39,7 +39,7 @@ export default function ContactForm(){
 
 
     return(
-        <div>
+        <div className={styles.ContactForm}>
             <h2 className={styles.formHeader}>Contact Form</h2>
             { toggle ?
             <div className={styles.formContainer}>
@@ -47,7 +47,7 @@ export default function ContactForm(){
                 
                     <input className={styles.formInput} value={formData.name} placeholder="Name" type="text" name="name" onChange={handleChange}></input>
                     <input className={styles.formInput} value={formData.email} placeholder="Email" type="text" name="email" onChange={handleChange}></input>
-                    <input className={styles.formInput} value={formData.message} placeholder="Message" type="text" name="message" onChange={handleChange}></input>
+                    <textarea rows="5" cols="19" className={styles.formInput} value={formData.message} placeholder="Message" type="text" name="message" onChange={handleChange}></textarea>
                     <button className={styles.formSubmit} type="submit">Submit</button>
                 
                 </form>

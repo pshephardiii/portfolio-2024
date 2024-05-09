@@ -107,7 +107,9 @@ function ContactForm() {
     }
     toggleTrue();
   }, []);
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h2", {
+  return /*#__PURE__*/React.createElement("div", {
+    className: _ContactForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ContactForm
+  }, /*#__PURE__*/React.createElement("h2", {
     className: _ContactForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].formHeader
   }, "Contact Form"), toggle ? /*#__PURE__*/React.createElement("div", {
     className: _ContactForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].formContainer
@@ -129,7 +131,9 @@ function ContactForm() {
     type: "text",
     name: "email",
     onChange: handleChange
-  }), /*#__PURE__*/React.createElement("input", {
+  }), /*#__PURE__*/React.createElement("textarea", {
+    rows: "5",
+    cols: "19",
     className: _ContactForm_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].formInput,
     value: formData.message,
     placeholder: "Message",
@@ -770,10 +774,61 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.rXtzMJoGkU1rsQf4DiH2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.rXtzMJoGkU1rsQf4DiH2 .aOC3kt4av4_f8FLVoINA {
+  font-family: "Courier Prime", monospace;
+  font-weight: lighter;
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+}
+.rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid darkblue;
+  padding: 2rem;
+}
+.rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 .EY__rqRg4_GocB6j5aUc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 .EY__rqRg4_GocB6j5aUc .LuJGcJyqVXNENEzbXHTc {
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-family: "Courier Prime", monospace;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 .EY__rqRg4_GocB6j5aUc .gbfllMzkJzCE9MlDNbup {
+  font-family: "Montserrat", serif;
+  font-weight: bolder;
+  background-color: lightgray;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: 10rem;
+}
+.rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 .EY__rqRg4_GocB6j5aUc .gbfllMzkJzCE9MlDNbup:hover {
+  color: white;
+  background-color: darkblue;
+  border: 2px solid lightgray;
+  cursor: pointer;
+}`, "",{"version":3,"sources":["webpack://./src/components/ContactForm/ContactForm.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAJ;AAEI;EACI,uCAAA;EACA,oBAAA;EACA,wCAAA;AAAR;AAGI;EACI,4BAAA;EACA,mBAAA;EACA,0BAAA;EACA,aAAA;AADR;AAIQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AAFZ;AAIY;EACI,kBAAA;EACA,0BAAA;EACA,uCAAA;EACA,mCAAA;AAFhB;AAKY;EACI,gCAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,kBAAA;EACA,mCAAA;EACA,YAAA;AAHhB;AAKY;EACI,YAAA;EACA,0BAAA;EACA,2BAAA;EACA,eAAA;AAHhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.ContactForm {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 3rem;\n\n    .formHeader {\n        font-family: \"Courier Prime\", monospace;\n        font-weight: lighter;\n        font-size: clamp(1.25rem, 2.5vw, 2.5rem);\n    }\n\n    .formContainer {\n        background-color: whitesmoke;\n        border-radius: 10px;\n        border: 2px solid darkblue;\n        padding: 2rem;\n\n\n        .contactForm {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            gap: 2rem;\n\n            .formInput {\n                border-radius: 5px;\n                border: 2px solid darkblue;\n                font-family: 'Courier Prime', monospace;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n            }\n\n            .formSubmit {\n                font-family: \"Montserrat\", serif;\n                font-weight: bolder;\n                background-color: lightgray;\n                border: 2px solid darkblue;\n                border-radius: 5px;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                width: 10rem;\n            }\n            .formSubmit:hover {\n                color: white;\n                background-color: darkblue;\n                border: 2px solid lightgray;\n                cursor: pointer;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"ContactForm": `rXtzMJoGkU1rsQf4DiH2`,
+	"formHeader": `aOC3kt4av4_f8FLVoINA`,
+	"formContainer": `t1tgf9a8BtfZ8nzZ5Dm3`,
+	"contactForm": `EY__rqRg4_GocB6j5aUc`,
+	"formInput": `LuJGcJyqVXNENEzbXHTc`,
+	"formSubmit": `gbfllMzkJzCE9MlDNbup`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -814,16 +869,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   align-items: center;
   gap: 5vw;
   height: 100%;
+  width: 100%;
   margin-left: 5rem;
 }
 .QpVD3qAS0nYBtoQqAYoe .xONuz4U1rd7MPGPmcxft .GRGR9aSk5WYAhblWf8Yl {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   text-decoration: none;
   color: black;
 }
 .QpVD3qAS0nYBtoQqAYoe .xONuz4U1rd7MPGPmcxft .GRGR9aSk5WYAhblWf8Yl:hover {
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAEA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,kBAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: 1.25rem;\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAEA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
@@ -858,7 +914,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Bb3ND5DsBlpFzlNbzVHu {
   justify-content: center;
   align-items: center;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
   background-color: lightgrey;
   position: fixed;
   bottom: 0;
@@ -877,7 +933,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Bb3ND5DsBlpFzlNbzVHu {
 }
 .Bb3ND5DsBlpFzlNbzVHu .rc6OcOz_ssuzPFYDVHuK .OCIWcgbb2IohLipUQV1I:hover {
   height: 3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;AACJ;AACI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AACR;AACQ;EACI,eAAA;EACA,kBAAA;AACZ;AACQ;EACI,YAAA;AACZ","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100vw;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;AACJ;AACI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AACR;AACQ;EACI,eAAA;EACA,kBAAA;AACZ;AACQ;EACI,YAAA;AACZ","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100%;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavFooter": `Bb3ND5DsBlpFzlNbzVHu`,
@@ -1068,7 +1124,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.c
 ___CSS_LOADER_EXPORT___.push([module.id, `.YLhl5O0tSVyQw_Ud6GeH {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 8vh;
   align-items: center;
   font-family: "Montserrat", serif;
   margin-left: 3rem;
@@ -1077,7 +1133,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.YLhl5O0tSVyQw_Ud6GeH {
 .YLhl5O0tSVyQw_Ud6GeH .LF94QYnFu9nPPxg2jz5E {
   font-size: clamp(1rem, 2vw, 1.5rem);
   text-align: center;
-}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,mCAAA;EACA,kBAAA;AAAR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.ContactPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .contactPageHeading {\n        font-size: clamp(1rem, 2vw, 1.5rem);\n        text-align: center;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,QAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,mCAAA;EACA,kBAAA;AAAR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.ContactPage {\n    display: flex;\n    flex-direction: column;\n    gap: 8vh;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .contactPageHeading {\n        font-size: clamp(1rem, 2vw, 1.5rem);\n        text-align: center;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ContactPage": `YLhl5O0tSVyQw_Ud6GeH`,
@@ -2126,4 +2182,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.ddfa40ff115e4e54b7fd4e43bc47a2d8.js.map
+//# sourceMappingURL=App.4402da093b0a30dcf193910465145db8.js.map
