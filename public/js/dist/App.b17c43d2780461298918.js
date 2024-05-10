@@ -269,14 +269,21 @@ function ProjectItem(_ref) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _utilities_projects_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utilities/projects-api */ "./src/utilities/projects-api.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 
 function ProjectList() {
   const [projects, setProjects] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+  const [toggle0, setToggle0] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+  const [toggle1, setToggle1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+  const [toggle2, setToggle2] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+  const imageClass0 = toggle0 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
+  const popupClass0 = toggle0 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
+  const imageClass1 = toggle1 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
+  const popupClass1 = toggle1 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
+  const imageClass2 = toggle2 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
+  const popupClass2 = toggle2 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     async function getProjects() {
       try {
@@ -288,6 +295,15 @@ function ProjectList() {
     }
     getProjects();
   }, [projects.length === 0]);
+  async function togglePopup0() {
+    setToggle0(!toggle0);
+  }
+  async function togglePopup1() {
+    setToggle1(!toggle1);
+  }
+  async function togglePopup2() {
+    setToggle2(!toggle2);
+  }
   if (projects.length !== 0) {
     return /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ProjectList
@@ -296,41 +312,83 @@ function ProjectList() {
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[0].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
-    }, projects[0].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/projects/".concat(projects[0]._id)
-    }, /*#__PURE__*/React.createElement("img", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectLinks
+    }, /*#__PURE__*/React.createElement("a", {
+      href: projects[0].liveProjectLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "Live Project"), " --- ", /*#__PURE__*/React.createElement("a", {
+      href: projects[0].githubLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "GitHub Repo")), /*#__PURE__*/React.createElement("img", {
       src: projects[0].image,
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    })), /*#__PURE__*/React.createElement("p", {
+      className: imageClass0,
+      onClick: togglePopup0
+    }), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[0].summary)), /*#__PURE__*/React.createElement("div", {
+    }, projects[0].summary), /*#__PURE__*/React.createElement("div", {
+      className: popupClass0,
+      onClick: togglePopup0
+    }, /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[0].tools), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectDecription
+    }, projects[0].description))), /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[1].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
-    }, projects[1].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/projects/".concat(projects[1]._id)
-    }, /*#__PURE__*/React.createElement("img", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectLinks
+    }, /*#__PURE__*/React.createElement("a", {
+      href: projects[1].liveProjectLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "Live Project"), " --- ", /*#__PURE__*/React.createElement("a", {
+      href: projects[1].githubLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "GitHub Repo")), /*#__PURE__*/React.createElement("img", {
       src: projects[1].image,
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    })), /*#__PURE__*/React.createElement("p", {
+      className: imageClass1,
+      onClick: togglePopup1
+    }), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[1].summary)), /*#__PURE__*/React.createElement("div", {
+    }, projects[1].summary), /*#__PURE__*/React.createElement("div", {
+      className: popupClass1,
+      onClick: togglePopup1
+    }, /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[1].tools), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectDecription
+    }, projects[1].description))), /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[2].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
-    }, projects[2].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-      to: "/projects/".concat(projects[2]._id)
-    }, /*#__PURE__*/React.createElement("img", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectLinks
+    }, /*#__PURE__*/React.createElement("a", {
+      href: projects[2].liveProjectLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "Live Project"), " --- ", /*#__PURE__*/React.createElement("a", {
+      href: projects[2].githubLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "GitHub Repo")), /*#__PURE__*/React.createElement("img", {
       src: projects[2].image,
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    })), /*#__PURE__*/React.createElement("p", {
+      className: imageClass2,
+      onClick: togglePopup2
+    }), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[2].summary)));
+    }, projects[2].summary), /*#__PURE__*/React.createElement("div", {
+      className: popupClass2,
+      onClick: togglePopup2
+    }, /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[2].tools), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectDecription
+    }, projects[2].description))));
   }
 }
 
@@ -598,7 +656,7 @@ function ProjectsPage() {
     className: _ProjectsPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ProjectsPage
   }, /*#__PURE__*/React.createElement("h1", {
     className: _ProjectsPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectsHeadline
-  }, "Projects"), /*#__PURE__*/React.createElement("p", null, "Click on image for more!"), /*#__PURE__*/React.createElement(_components_ProjectList_ProjectList__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  }, "Projects"), /*#__PURE__*/React.createElement("p", null, "Click on image or links for more!"), /*#__PURE__*/React.createElement(_components_ProjectList_ProjectList__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 
 /***/ }),
@@ -1072,17 +1130,53 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
   font-size: 1.5rem;
   text-align: center;
 }
-.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .Qql65YZ1jJ3YjY7O66od {
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gH_sXGDoYMrrU0PqFa8o {
   font-size: 1.5rem;
 }
-.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc {
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .nwz3gDLOU0GR00QQGvZn:hover {
+  color: white;
+  text-shadow: 1px 1px 1px blue;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .v20QUUrVOvZ6R7iVz5Wr {
   width: 40rem;
   border-radius: 5%;
   box-shadow: 2px 2px 1px black;
+  opacity: 1;
 }
-.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc:hover {
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .v20QUUrVOvZ6R7iVz5Wr:hover {
   box-shadow: 2px 2px 1px white;
   opacity: 0.8;
+  cursor: pointer;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .OG_58bK6KgGnHwZ5RqwY {
+  width: 40rem;
+  border-radius: 5%;
+  box-shadow: 2px 2px 1px black;
+  opacity: 0.1;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .OG_58bK6KgGnHwZ5RqwY:hover {
+  cursor: pointer;
+}
+.JHKOwgw57XWKRmWEcOoS .p5GA4VhZeJoeeSNsdLnJ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 28rem;
+  width: 38rem;
+  font-size: 1.25rem;
+  z-index: 20000;
+  cursor: pointer;
+}
+.JHKOwgw57XWKRmWEcOoS .tkRmNQSyjZW3ZOoyTLwl {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 28rem;
+  width: 38rem;
+  font-size: 1.25rem;
+  z-index: 20000;
 }
 
 @media screen and (width < 45rem) {
@@ -1103,21 +1197,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
   .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .PVVdgIVykr3De_euNVVH {
     font-size: 1rem;
   }
-  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .Qql65YZ1jJ3YjY7O66od {
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gH_sXGDoYMrrU0PqFa8o {
     font-size: 1rem;
   }
-  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc {
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .v20QUUrVOvZ6R7iVz5Wr {
     width: 25rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;AAFZ;AAKQ;EACI,6BAAA;EACA,YAAA;AAHZ;;AASA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EANN;EAQM;IACI,YAAA;IACA,aAAA;IACA,cAAA;EANV;EAQU;IACI,iBAAA;EANd;EASU;IACI,eAAA;EAPd;EAUU;IACI,eAAA;EARd;EAWU;IACI,YAAA;EATd;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 42rem;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n        }\n\n        .projectTools {\n            font-size: 1.5rem;\n        }\n\n        .projectImage {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n        }\n\n        .projectImage:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n        }\n\n    }\n}\n\n@media screen and (width < 45rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 27rem;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n            }\n\n            .projectTools {\n                font-size: 1rem;\n            }\n\n            .projectImage {\n                width: 25rem;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .OG_58bK6KgGnHwZ5RqwY {
+    width: 25rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .p5GA4VhZeJoeeSNsdLnJ {
+    font-size: 1rem;
+    width: 23rem;
+    bottom: 20rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,6BAAA;AAFZ;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,UAAA;AAJZ;AAOQ;EACI,6BAAA;EACA,YAAA;EACA,eAAA;AALZ;AAQQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,YAAA;AANZ;AASQ;EACI,eAAA;AAPZ;AAWI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,eAAA;AATR;AAYI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;AAVR;;AAeA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EAZN;EAcM;IACI,YAAA;IACA,aAAA;IACA,cAAA;EAZV;EAcU;IACI,iBAAA;EAZd;EAeU;IACI,eAAA;EAbd;EAgBU;IACI,eAAA;EAdd;EAiBU;IACI,YAAA;EAfd;EAkBU;IACI,YAAA;EAhBd;EAoBM;IACI,eAAA;IACA,YAAA;IACA,aAAA;EAlBV;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 42rem;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n        }\n\n        .projectLinks {\n            font-size: 1.5rem;\n        }\n\n        .link:hover {\n            color: white;\n            text-shadow: 1px 1px 1px blue;\n\n        }\n\n        .projectImageVisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: 1;\n        }\n\n        .projectImageVisible:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n            cursor: pointer;\n        }\n\n        .projectImageInvisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: .1;\n        }\n\n        .projectImageInvisible:hover {\n            cursor: pointer;\n        }\n    }\n\n    .projectPopupVisible {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        z-index: 20000; \n        cursor: pointer;\n    }\n\n    .projectPopupInvisible {\n        display: none;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        z-index: 20000;\n        \n    }\n}\n\n@media screen and (width < 45rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 27rem;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n            }\n\n            .projectLinks {\n                font-size: 1rem;\n            }\n\n            .projectImageVisible {\n                width: 25rem;\n            }\n\n            .projectImageInvisible {\n                width: 25rem;\n            }\n        }\n\n        .projectPopupVisible {\n            font-size: 1rem;\n            width: 23rem;\n            bottom: 20rem;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectList": `JHKOwgw57XWKRmWEcOoS`,
 	"projectContainer": `vR5nBBaIVoqpGEr4TnRN`,
 	"projectName": `qyjsO88M5Zk6_RHHlYLT`,
 	"projectSummary": `PVVdgIVykr3De_euNVVH`,
-	"projectTools": `Qql65YZ1jJ3YjY7O66od`,
-	"projectImage": `gWG64FNmUpiC_L6mQQuc`
+	"projectLinks": `gH_sXGDoYMrrU0PqFa8o`,
+	"link": `nwz3gDLOU0GR00QQGvZn`,
+	"projectImageVisible": `v20QUUrVOvZ6R7iVz5Wr`,
+	"projectImageInvisible": `OG_58bK6KgGnHwZ5RqwY`,
+	"projectPopupVisible": `p5GA4VhZeJoeeSNsdLnJ`,
+	"projectPopupInvisible": `tkRmNQSyjZW3ZOoyTLwl`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2372,4 +2478,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.488605d66aaef42fd2662d50c8b19b4c.js.map
+//# sourceMappingURL=App.81d4bec08a184fe986debfb22ac349e6.js.map

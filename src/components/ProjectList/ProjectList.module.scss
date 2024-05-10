@@ -25,21 +25,63 @@
             text-align: center;
         }
 
-        .projectTools {
+        .projectLinks {
             font-size: 1.5rem;
         }
 
-        .projectImage {
+        .link:hover {
+            color: white;
+            text-shadow: 1px 1px 1px blue;
+
+        }
+
+        .projectImageVisible {
             width: 40rem;
             border-radius: 5%;
             box-shadow: 2px 2px 1px black;
+            opacity: 1;
         }
 
-        .projectImage:hover {
+        .projectImageVisible:hover {
             box-shadow: 2px 2px 1px white;
             opacity: .8;
+            cursor: pointer;
         }
 
+        .projectImageInvisible {
+            width: 40rem;
+            border-radius: 5%;
+            box-shadow: 2px 2px 1px black;
+            opacity: .1;
+        }
+
+        .projectImageInvisible:hover {
+            cursor: pointer;
+        }
+    }
+
+    .projectPopupVisible {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 28rem;
+        width: 38rem;
+        font-size: 1.25rem;
+        z-index: 20000; 
+        cursor: pointer;
+    }
+
+    .projectPopupInvisible {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 28rem;
+        width: 38rem;
+        font-size: 1.25rem;
+        z-index: 20000;
+        
     }
 }
 
@@ -63,13 +105,23 @@
                 font-size: 1rem;
             }
 
-            .projectTools {
+            .projectLinks {
                 font-size: 1rem;
             }
 
-            .projectImage {
+            .projectImageVisible {
                 width: 25rem;
             }
+
+            .projectImageInvisible {
+                width: 25rem;
+            }
+        }
+
+        .projectPopupVisible {
+            font-size: 1rem;
+            width: 23rem;
+            bottom: 20rem;
         }
     }
 }
