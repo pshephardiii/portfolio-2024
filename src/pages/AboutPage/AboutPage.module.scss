@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 .AboutPage {
     display: flex;
@@ -7,13 +8,57 @@
     align-items: center;
     font-family: 'Montserrat', serif;
 
+
+    .aboutHeadline {
+        font-weight: normal;
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        gap: 2rem;
+
     .aboutSummary {
         margin-bottom: 3rem;
         width: 90vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-    .aboutImage {
-        width: 25vw;
-        min-width: 15rem;
+    .aboutPageTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        .picAndCap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 2rem;
+
+            .aboutImage {
+                width: 25vw;
+                min-width: 17rem;
+                border-radius: 70px;
+                box-shadow: 5px 5px 5px 5px skyblue;
+           
+            }
+        }
+            .aboutCaption {
+                font-style: italic;
+
+            }
+        }
+        .aboutQuote {
+            font-size: clamp(1.25rem, 2vw, 2rem);
+            font-family: "Gloria Hallelujah", cursive;
+            text-shadow: 2px 2px 2px white;
+            margin-right: 2rem;
+        }
     }
+    
 }

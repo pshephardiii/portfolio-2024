@@ -408,10 +408,12 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 function AboutPage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].AboutPage
-  }, /*#__PURE__*/React.createElement("h1", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutHeadline
-  }, "About Me"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/React.createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].mainContent
+  }, /*#__PURE__*/React.createElement("div", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPageTop
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].picAndCap
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/hWb88UB.jpeg",
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutImage,
@@ -419,13 +421,13 @@ function AboutPage() {
     alt: "A man sitting on a chair with a Yorkie on his lap"
   }), /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutCaption
-  }, "Pictured: My dog Baxter and I"), /*#__PURE__*/React.createElement("p", {
+  }, "Pictured: My dog Baxter and I")), /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutQuote
-  }, "\"Paul is the greatest coder alive.\" - Baxter, Ph.D"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__["default"], null)), /*#__PURE__*/React.createElement("div", {
+  }, "\"Paul is the greatest coder alive.\" - Baxter, Ph.D")), /*#__PURE__*/React.createElement("div", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutSummary
   }, /*#__PURE__*/React.createElement("p", null, "I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech."), /*#__PURE__*/React.createElement("p", null, "My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways. My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital \"nudging,\" and the use of algorithms to determine content viewability."), /*#__PURE__*/React.createElement("p", null, "My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action. Finally, my familiarity with professional conference presentations has drastically improved my public speaking skills, confidence, and my ability to \"read a room.\""), /*#__PURE__*/React.createElement("p", null, "It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software development landscape!"), /*#__PURE__*/React.createElement("p", null, "To take a look at my resume, click ", /*#__PURE__*/React.createElement("a", {
     href: ""
-  }, "here!"))));
+  }, "here!")))));
 }
 
 /***/ }),
@@ -749,12 +751,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes cHTjXpCQRt3P5Ps9uofS {
     opacity: 0;
   }
 }
+.cpBhSBxa_1hjqWyjxJVH {
+  width: 100vw;
+  height: 8rem;
+  text-align: center;
+}
 .cpBhSBxa_1hjqWyjxJVH ._oETPRO9bgRtAEaJt69J {
+  font-size: 2rem;
+  font-weight: bold;
   animation: cHTjXpCQRt3P5Ps9uofS 5s linear;
 }
 .cpBhSBxa_1hjqWyjxJVH .DuDkOPd7Rxcm3oZBtmzQ {
   opacity: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAGI;EACI,yCAAA;AADR;AAGI;EACI,UAAA;AADR","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    .displayFade {\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: 0\n    }\n\n    \n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAEA;EACI,YAAA;EACA,YAAA;EACA,kBAAA;AAAJ;AAGI;EACI,eAAA;EACA,iBAAA;EACA,yCAAA;AADR;AAGI;EACI,UAAA;AADR","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    width: 100vw;\n    height: 8rem;\n    text-align: center;\n \n\n    .displayFade {\n        font-size: 2rem;\n        font-weight: bold;\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: .0\n    }\n\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"attributesList": `cpBhSBxa_1hjqWyjxJVH`,
@@ -1085,6 +1094,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap);"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   display: flex;
@@ -1093,19 +1103,61 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   align-items: center;
   font-family: "Montserrat", serif;
 }
-.lkSfnDUQxn7c_fywXKpE .OuIChOJDCpXfENqVXqFt {
+.lkSfnDUQxn7c_fywXKpE .YRGcFBfG_CrTzfeZl00z {
+  font-weight: normal;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  gap: 2rem;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .OuIChOJDCpXfENqVXqFt {
   margin-bottom: 3rem;
   width: 90vw;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-.lkSfnDUQxn7c_fywXKpE .BAWeDeT602tzkjcoKgb6 {
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .ezCuwE4LBXhXa9Vq95yW {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .ezCuwE4LBXhXa9Vq95yW .s5OeKKoKnpZOe0f2mTel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .ezCuwE4LBXhXa9Vq95yW .s5OeKKoKnpZOe0f2mTel .BAWeDeT602tzkjcoKgb6 {
   width: 25vw;
-  min-width: 15rem;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAEI;EACI,mBAAA;EACA,WAAA;AAAR;AAGI;EACI,WAAA;EACA,gBAAA;AADR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 90vw;\n    }\n\n    .aboutImage {\n        width: 25vw;\n        min-width: 15rem;\n    }\n}"],"sourceRoot":""}]);
+  min-width: 17rem;
+  border-radius: 70px;
+  box-shadow: 5px 5px 5px 5px skyblue;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .ezCuwE4LBXhXa9Vq95yW .OMVzCXBVYRgO9rXmSKGJ {
+  font-style: italic;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .maYgZBbSPNX4mu9_CsqA {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-family: "Gloria Hallelujah", cursive;
+  text-shadow: 2px 2px 2px white;
+  margin-right: 2rem;
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAGI;EACI,mBAAA;AADR;AAII;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,SAAA;AAFR;AAII;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AAFR;AAKI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;AAHR;AAKQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;AAHZ;AAKY;EACI,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,mCAAA;AAHhB;AAOY;EACI,kBAAA;AALhB;AASQ;EACI,oCAAA;EACA,yCAAA;EACA,8BAAA;EACA,kBAAA;AAPZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n\n    .aboutHeadline {\n        font-weight: normal;\n    }\n\n    .mainContent {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin-left: 3rem;\n        margin-right: 3rem;\n        gap: 2rem;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 90vw;\n        margin-left: 2rem;\n        margin-right: 2rem;\n    }\n\n    .aboutPageTop {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 3rem;\n\n        .picAndCap {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-left: 2rem;\n\n            .aboutImage {\n                width: 25vw;\n                min-width: 17rem;\n                border-radius: 70px;\n                box-shadow: 5px 5px 5px 5px skyblue;\n           \n            }\n        }\n            .aboutCaption {\n                font-style: italic;\n\n            }\n        }\n        .aboutQuote {\n            font-size: clamp(1.25rem, 2vw, 2rem);\n            font-family: \"Gloria Hallelujah\", cursive;\n            text-shadow: 2px 2px 2px white;\n            margin-right: 2rem;\n        }\n    }\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutPage": `lkSfnDUQxn7c_fywXKpE`,
+	"aboutHeadline": `YRGcFBfG_CrTzfeZl00z`,
+	"mainContent": `VtlIqFYCMAGmwCPumyEz`,
 	"aboutSummary": `OuIChOJDCpXfENqVXqFt`,
-	"aboutImage": `BAWeDeT602tzkjcoKgb6`
+	"aboutPageTop": `ezCuwE4LBXhXa9Vq95yW`,
+	"picAndCap": `s5OeKKoKnpZOe0f2mTel`,
+	"aboutImage": `BAWeDeT602tzkjcoKgb6`,
+	"aboutCaption": `OMVzCXBVYRgO9rXmSKGJ`,
+	"aboutQuote": `maYgZBbSPNX4mu9_CsqA`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2192,4 +2244,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.5ef5627895bb1115ab364fc90585188c.js.map
+//# sourceMappingURL=App.d23049535dc0caaa10a24f6542a742d8.js.map

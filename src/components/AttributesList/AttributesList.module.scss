@@ -14,11 +14,18 @@
 }
 
 .attributesList {
+    width: 100vw;
+    height: 8rem;
+    text-align: center;
+ 
+
     .displayFade {
+        font-size: 2rem;
+        font-weight: bold;
         animation: fadeInAndOut 5s linear
     }
     .null {
-        opacity: 0
+        opacity: .0
     }
 
     
