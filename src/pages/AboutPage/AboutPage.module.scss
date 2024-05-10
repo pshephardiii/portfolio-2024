@@ -53,12 +53,47 @@
 
             }
         }
-        .aboutQuote {
-            font-size: clamp(1.25rem, 2vw, 2rem);
-            font-family: "Gloria Hallelujah", cursive;
-            text-shadow: 2px 2px 2px white;
-            margin-right: 2rem;
+
+        .aboutQuoteAndStrengths {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .aboutQuote {
+                font-size: clamp(1.25rem, 2vw, 2rem);
+                font-family: "Gloria Hallelujah", cursive;
+                text-shadow: 2px 2px 2px white;
+                margin-right: 2rem;
+            }
+
+            .aboutStrengths {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 2rem;
+
+                .strengthsHeader {
+                    font-size: clamp(1.25rem, 2vw, 2rem);
+                }
+
+                .aboutStrengthsList {
+                    list-style: circle;
+
+                    .listItem {
+                        font-size: clamp(1.25rem, 2vw, 2rem);
+                    }
+                }
+            }
         }
     }
     
+}
+
+@media screen and (width < 40rem) {
+    .aboutPageTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

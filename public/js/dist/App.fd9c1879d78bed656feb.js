@@ -421,9 +421,23 @@ function AboutPage() {
     alt: "A man sitting on a chair with a Yorkie on his lap"
   }), /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutCaption
-  }, "Pictured: My dog Baxter and I")), /*#__PURE__*/React.createElement("p", {
+  }, "Pictured: My dog Baxter and I")), /*#__PURE__*/React.createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutQuoteAndStrengths
+  }, /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutQuote
-  }, "\"Paul is the greatest coder alive.\" - Baxter, Ph.D")), /*#__PURE__*/React.createElement("div", {
+  }, "\"Paul is the greatest coder alive.\" - Baxter, Ph.D"), /*#__PURE__*/React.createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutStrengths
+  }, /*#__PURE__*/React.createElement("p", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].strengthsHeader
+  }, "Strengths Include:"), /*#__PURE__*/React.createElement("ul", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutStrengthsList
+  }, /*#__PURE__*/React.createElement("li", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+  }, "Logic-based languages and problem-solving"), /*#__PURE__*/React.createElement("li", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+  }, "Backend model attribution and functionality"), /*#__PURE__*/React.createElement("li", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+  }, "Component dataflow, structure, and design"))))), /*#__PURE__*/React.createElement("div", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutSummary
   }, /*#__PURE__*/React.createElement("p", null, "I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech."), /*#__PURE__*/React.createElement("p", null, "My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways. My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital \"nudging,\" and the use of algorithms to determine content viewability."), /*#__PURE__*/React.createElement("p", null, "My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action. Finally, my familiarity with professional conference presentations has drastically improved my public speaking skills, confidence, and my ability to \"read a room.\""), /*#__PURE__*/React.createElement("p", null, "It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software development landscape!"), /*#__PURE__*/React.createElement("p", null, "To take a look at my resume, click ", /*#__PURE__*/React.createElement("a", {
     href: ""
@@ -1141,12 +1155,40 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
 .lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .ezCuwE4LBXhXa9Vq95yW .OMVzCXBVYRgO9rXmSKGJ {
   font-style: italic;
 }
-.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .maYgZBbSPNX4mu9_CsqA {
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl .maYgZBbSPNX4mu9_CsqA {
   font-size: clamp(1.25rem, 2vw, 2rem);
   font-family: "Gloria Hallelujah", cursive;
   text-shadow: 2px 2px 2px white;
   margin-right: 2rem;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAGI;EACI,mBAAA;AADR;AAII;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,SAAA;AAFR;AAII;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AAFR;AAKI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;AAHR;AAKQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;AAHZ;AAKY;EACI,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,mCAAA;AAHhB;AAOY;EACI,kBAAA;AALhB;AASQ;EACI,oCAAA;EACA,yCAAA;EACA,8BAAA;EACA,kBAAA;AAPZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n\n    .aboutHeadline {\n        font-weight: normal;\n    }\n\n    .mainContent {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin-left: 3rem;\n        margin-right: 3rem;\n        gap: 2rem;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 90vw;\n        margin-left: 2rem;\n        margin-right: 2rem;\n    }\n\n    .aboutPageTop {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 3rem;\n\n        .picAndCap {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-left: 2rem;\n\n            .aboutImage {\n                width: 25vw;\n                min-width: 17rem;\n                border-radius: 70px;\n                box-shadow: 5px 5px 5px 5px skyblue;\n           \n            }\n        }\n            .aboutCaption {\n                font-style: italic;\n\n            }\n        }\n        .aboutQuote {\n            font-size: clamp(1.25rem, 2vw, 2rem);\n            font-family: \"Gloria Hallelujah\", cursive;\n            text-shadow: 2px 2px 2px white;\n            margin-right: 2rem;\n        }\n    }\n    \n}"],"sourceRoot":""}]);
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl .n8qGURuG00xCJb0iYId0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl .n8qGURuG00xCJb0iYId0 .IwzStA7Xzwr7JTPnQ4fh {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl .n8qGURuG00xCJb0iYId0 .P0jevH_Mip0MECWmNgyg {
+  list-style: circle;
+}
+.lkSfnDUQxn7c_fywXKpE .VtlIqFYCMAGmwCPumyEz .XgkwmsjZQTxNgQxnbBKl .n8qGURuG00xCJb0iYId0 .P0jevH_Mip0MECWmNgyg .fgPEHcRDC1kcnEqMXLO6 {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+@media screen and (width < 40rem) {
+  .ezCuwE4LBXhXa9Vq95yW {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAGI;EACI,mBAAA;AADR;AAII;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,SAAA;AAFR;AAII;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AAFR;AAKI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;AAHR;AAKQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;AAHZ;AAKY;EACI,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,mCAAA;AAHhB;AAOY;EACI,kBAAA;AALhB;AAUQ;EAEI,aAAA;EACA,sBAAA;EACA,mBAAA;AATZ;AAWY;EACI,oCAAA;EACA,yCAAA;EACA,8BAAA;EACA,kBAAA;AAThB;AAYY;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;AAVhB;AAYgB;EACI,oCAAA;AAVpB;AAagB;EACI,kBAAA;AAXpB;AAaoB;EACI,oCAAA;AAXxB;;AAoBA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;EAjBN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n\n    .aboutHeadline {\n        font-weight: normal;\n    }\n\n    .mainContent {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin-left: 3rem;\n        margin-right: 3rem;\n        gap: 2rem;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 90vw;\n        margin-left: 2rem;\n        margin-right: 2rem;\n    }\n\n    .aboutPageTop {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 3rem;\n\n        .picAndCap {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-left: 2rem;\n\n            .aboutImage {\n                width: 25vw;\n                min-width: 17rem;\n                border-radius: 70px;\n                box-shadow: 5px 5px 5px 5px skyblue;\n           \n            }\n        }\n            .aboutCaption {\n                font-style: italic;\n\n            }\n        }\n\n        .aboutQuoteAndStrengths {\n\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n\n            .aboutQuote {\n                font-size: clamp(1.25rem, 2vw, 2rem);\n                font-family: \"Gloria Hallelujah\", cursive;\n                text-shadow: 2px 2px 2px white;\n                margin-right: 2rem;\n            }\n\n            .aboutStrengths {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                margin-right: 2rem;\n\n                .strengthsHeader {\n                    font-size: clamp(1.25rem, 2vw, 2rem);\n                }\n\n                .aboutStrengthsList {\n                    list-style: circle;\n\n                    .listItem {\n                        font-size: clamp(1.25rem, 2vw, 2rem);\n                    }\n                }\n            }\n        }\n    }\n    \n}\n\n@media screen and (width < 40rem) {\n    .aboutPageTop {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutPage": `lkSfnDUQxn7c_fywXKpE`,
@@ -1157,7 +1199,12 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"picAndCap": `s5OeKKoKnpZOe0f2mTel`,
 	"aboutImage": `BAWeDeT602tzkjcoKgb6`,
 	"aboutCaption": `OMVzCXBVYRgO9rXmSKGJ`,
-	"aboutQuote": `maYgZBbSPNX4mu9_CsqA`
+	"aboutQuoteAndStrengths": `XgkwmsjZQTxNgQxnbBKl`,
+	"aboutQuote": `maYgZBbSPNX4mu9_CsqA`,
+	"aboutStrengths": `n8qGURuG00xCJb0iYId0`,
+	"strengthsHeader": `IwzStA7Xzwr7JTPnQ4fh`,
+	"aboutStrengthsList": `P0jevH_Mip0MECWmNgyg`,
+	"listItem": `fgPEHcRDC1kcnEqMXLO6`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2244,4 +2291,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.d23049535dc0caaa10a24f6542a742d8.js.map
+//# sourceMappingURL=App.1feb1ab01087777b8361f835b12de7c0.js.map

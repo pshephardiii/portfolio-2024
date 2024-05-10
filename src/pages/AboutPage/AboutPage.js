@@ -11,9 +11,17 @@ export default function AboutPage(){
                     <img src='https://i.imgur.com/hWb88UB.jpeg' className={styles.aboutImage} title="Paul and Baxter" alt="A man sitting on a chair with a Yorkie on his lap"></img>
                     <p className={styles.aboutCaption}>Pictured: My dog Baxter and I</p>
                 </div>
-         
-                <p className={styles.aboutQuote}>"Paul is the greatest coder alive." - Baxter, Ph.D</p>
-
+                <div className={styles.aboutQuoteAndStrengths}>
+                    <p className={styles.aboutQuote}>"Paul is the greatest coder alive." - Baxter, Ph.D</p>
+                    <div className={styles.aboutStrengths}>
+                        <p className={styles.strengthsHeader}>Strengths Include:</p>
+                        <ul className={styles.aboutStrengthsList}>
+                            <li className={styles.listItem}>Logic-based languages and problem-solving</li>
+                            <li className={styles.listItem}>Backend model attribution and functionality</li>
+                            <li className={styles.listItem}>Component dataflow, structure, and design</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div className={styles.aboutSummary}>
                  <p>I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech.</p>
