@@ -2,11 +2,74 @@
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 2rem;
     align-items: center;
+    width: 95vw;
+    
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 42rem;
+        height: 40rem;
+        margin: 0 2rem;
+        border-top: 4px dotted white;
 
-    .projectImage {
-        width: 50vw;
-        min-width: 25rem;
+        .projectName {
+            font-size: 2rem;
+            height: 1.75rem;
+        }
+
+        .projectSummary {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .projectTools {
+            font-size: 1.5rem;
+        }
+
+        .projectImage {
+            width: 40rem;
+            border-radius: 5%;
+            box-shadow: 2px 2px 1px black;
+        }
+
+        .projectImage:hover {
+            box-shadow: 2px 2px 1px white;
+            opacity: .8;
+        }
+
+    }
+}
+
+@media screen and (width < 45rem) {
+    .ProjectList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .projectContainer {
+            width: 27rem;
+            height: 27rem;
+            margin: 0 2rem;
+
+            .projectName {
+                font-size: 1.5rem;
+            }
+
+            .projectSummary {
+                font-size: 1rem;
+            }
+
+            .projectTools {
+                font-size: 1rem;
+            }
+
+            .projectImage {
+                width: 25rem;
+            }
+        }
     }
 }

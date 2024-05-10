@@ -296,41 +296,41 @@ function ProjectList() {
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[0].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[0].summary), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
     }, projects[0].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[0]._id)
     }, /*#__PURE__*/React.createElement("img", {
       src: projects[0].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    }))), /*#__PURE__*/React.createElement("div", {
+    })), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[0].summary)), /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[1].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[1].summary), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
     }, projects[1].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[1]._id)
     }, /*#__PURE__*/React.createElement("img", {
       src: projects[1].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    }))), /*#__PURE__*/React.createElement("div", {
+    })), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[1].summary)), /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
     }, /*#__PURE__*/React.createElement("h3", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
     }, projects[2].name), /*#__PURE__*/React.createElement("p", {
-      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
-    }, projects[2].summary), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
     }, projects[2].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[2]._id)
     }, /*#__PURE__*/React.createElement("img", {
       src: projects[2].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    }))));
+    })), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[2].summary)));
   }
 }
 
@@ -598,7 +598,7 @@ function ProjectsPage() {
     className: _ProjectsPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ProjectsPage
   }, /*#__PURE__*/React.createElement("h1", {
     className: _ProjectsPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectsHeadline
-  }, "Projects"), /*#__PURE__*/React.createElement(_components_ProjectList_ProjectList__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  }, "Projects"), /*#__PURE__*/React.createElement("p", null, "Click on image for more!"), /*#__PURE__*/React.createElement(_components_ProjectList_ProjectList__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 
 /***/ }),
@@ -1051,16 +1051,72 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 2rem;
   align-items: center;
+  width: 95vw;
 }
-.JHKOwgw57XWKRmWEcOoS .gWG64FNmUpiC_L6mQQuc {
-  width: 50vw;
-  min-width: 25rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AACJ;AACI;EACI,WAAA;EACA,gBAAA;AACR","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n\n    .projectImage {\n        width: 50vw;\n        min-width: 25rem;\n    }\n}"],"sourceRoot":""}]);
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42rem;
+  height: 40rem;
+  margin: 0 2rem;
+  border-top: 4px dotted white;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .qyjsO88M5Zk6_RHHlYLT {
+  font-size: 2rem;
+  height: 1.75rem;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .PVVdgIVykr3De_euNVVH {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .Qql65YZ1jJ3YjY7O66od {
+  font-size: 1.5rem;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc {
+  width: 40rem;
+  border-radius: 5%;
+  box-shadow: 2px 2px 1px black;
+}
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc:hover {
+  box-shadow: 2px 2px 1px white;
+  opacity: 0.8;
+}
+
+@media screen and (width < 45rem) {
+  .JHKOwgw57XWKRmWEcOoS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN {
+    width: 27rem;
+    height: 27rem;
+    margin: 0 2rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .qyjsO88M5Zk6_RHHlYLT {
+    font-size: 1.5rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .PVVdgIVykr3De_euNVVH {
+    font-size: 1rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .Qql65YZ1jJ3YjY7O66od {
+    font-size: 1rem;
+  }
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .gWG64FNmUpiC_L6mQQuc {
+    width: 25rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;AAFZ;AAKQ;EACI,6BAAA;EACA,YAAA;AAHZ;;AASA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EANN;EAQM;IACI,YAAA;IACA,aAAA;IACA,cAAA;EANV;EAQU;IACI,iBAAA;EANd;EASU;IACI,eAAA;EAPd;EAUU;IACI,eAAA;EARd;EAWU;IACI,YAAA;EATd;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 42rem;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n        }\n\n        .projectTools {\n            font-size: 1.5rem;\n        }\n\n        .projectImage {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n        }\n\n        .projectImage:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n        }\n\n    }\n}\n\n@media screen and (width < 45rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 27rem;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n            }\n\n            .projectTools {\n                font-size: 1rem;\n            }\n\n            .projectImage {\n                width: 25rem;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectList": `JHKOwgw57XWKRmWEcOoS`,
+	"projectContainer": `vR5nBBaIVoqpGEr4TnRN`,
+	"projectName": `qyjsO88M5Zk6_RHHlYLT`,
+	"projectSummary": `PVVdgIVykr3De_euNVVH`,
+	"projectTools": `Qql65YZ1jJ3YjY7O66od`,
 	"projectImage": `gWG64FNmUpiC_L6mQQuc`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -1372,13 +1428,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Hm5lrRZJnIjLwwBLaW3Z {
   justify-content: flex-start;
   align-items: center;
 }
-.Hm5lrRZJnIjLwwBLaW3Z .LWMKdAZNRskUooKewkau {
+.Hm5lrRZJnIjLwwBLaW3Z .ciXDBHa6iQAWtLR1heZQ {
   text-align: center;
-}`, "",{"version":3,"sources":["webpack://./src/pages/ProjectsPage/ProjectsPage.module.scss"],"names":[],"mappings":"AAGA;EACI,gCAAA;EACA,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AADJ;AAEI;EACI,kBAAA;AAAR","sourcesContent":["\n@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.ProjectsPage {\n    font-family: 'Montserrat', serif;\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    .projectsHeadling {\n        text-align: center;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ProjectsPage/ProjectsPage.module.scss"],"names":[],"mappings":"AAGA;EACI,gCAAA;EACA,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AADJ;AAEI;EACI,kBAAA;AAAR","sourcesContent":["\n@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.ProjectsPage {\n    font-family: 'Montserrat', serif;\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    .projectsHeadline {\n        text-align: center;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectsPage": `Hm5lrRZJnIjLwwBLaW3Z`,
-	"projectsHeadling": `LWMKdAZNRskUooKewkau`
+	"projectsHeadline": `ciXDBHa6iQAWtLR1heZQ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2316,4 +2372,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.5535734ec1d056357d14dac7aa93e272.js.map
+//# sourceMappingURL=App.488605d66aaef42fd2662d50c8b19b4c.js.map
