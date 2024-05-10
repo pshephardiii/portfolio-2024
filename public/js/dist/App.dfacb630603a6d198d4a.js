@@ -895,6 +895,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   left: 0;
   font-family: "Roboto Slab", serif;
   border-bottom: 1px solid black;
+  z-index: 1000;
 }
 .QpVD3qAS0nYBtoQqAYoe .xONuz4U1rd7MPGPmcxft {
   display: flex;
@@ -912,7 +913,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
 }
 .QpVD3qAS0nYBtoQqAYoe .xONuz4U1rd7MPGPmcxft .GRGR9aSk5WYAhblWf8Yl:hover {
   color: white;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAEA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAEA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;EACA,aAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n    z-index: 1000;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
@@ -2291,4 +2292,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.1feb1ab01087777b8361f835b12de7c0.js.map
+//# sourceMappingURL=App.339e317068122cbde84e2f5ca589bb93.js.map
