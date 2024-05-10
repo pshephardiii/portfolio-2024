@@ -291,19 +291,43 @@ function ProjectList() {
   if (projects.length !== 0) {
     return /*#__PURE__*/React.createElement("div", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ProjectList
-    }, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    }, /*#__PURE__*/React.createElement("div", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
+    }, /*#__PURE__*/React.createElement("h3", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
+    }, projects[0].name), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[0].summary), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[0].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[0]._id)
-    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, projects[0].name), /*#__PURE__*/React.createElement("p", null, projects[0].summary), /*#__PURE__*/React.createElement("p", null, projects[0].tools), /*#__PURE__*/React.createElement("img", {
+    }, /*#__PURE__*/React.createElement("img", {
       src: projects[0].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    }))), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    }))), /*#__PURE__*/React.createElement("div", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
+    }, /*#__PURE__*/React.createElement("h3", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
+    }, projects[1].name), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[1].summary), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[1].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[1]._id)
-    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, projects[1].name), /*#__PURE__*/React.createElement("p", null, projects[1].summary), /*#__PURE__*/React.createElement("p", null, projects[1].tools), /*#__PURE__*/React.createElement("img", {
+    }, /*#__PURE__*/React.createElement("img", {
       src: projects[1].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
-    }))), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    }))), /*#__PURE__*/React.createElement("div", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
+    }, /*#__PURE__*/React.createElement("h3", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
+    }, projects[2].name), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[2].summary), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[2].tools), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: "/projects/".concat(projects[2]._id)
-    }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h3", null, projects[2].name), /*#__PURE__*/React.createElement("p", null, projects[2].summary), /*#__PURE__*/React.createElement("p", null, projects[2].tools), /*#__PURE__*/React.createElement("img", {
+    }, /*#__PURE__*/React.createElement("img", {
       src: projects[2].image,
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImage
     }))));
@@ -2292,4 +2316,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.339e317068122cbde84e2f5ca589bb93.js.map
+//# sourceMappingURL=App.5535734ec1d056357d14dac7aa93e272.js.map
