@@ -14,7 +14,7 @@
 }
 
 .attributesList {
-    width: 100vw;
+    
     height: 8rem;
     text-align: center;
  
@@ -22,6 +22,8 @@
     .displayFade {
         font-size: 2rem;
         font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 2px black;
         animation: fadeInAndOut 5s linear
     }
     .null {

@@ -604,7 +604,6 @@ function ContactPage() {
 /* harmony import */ var _components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/SkillList/SkillList */ "./src/components/SkillList/SkillList.js");
 /* harmony import */ var _components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/AttributesList/AttributesList */ "./src/components/AttributesList/AttributesList.js");
 /* harmony import */ var _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.module.scss */ "./src/pages/HomePage/HomePage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
@@ -613,12 +612,24 @@ function ContactPage() {
 function HomePage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].HomePage
-  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("h4", null, "A PHILOSOPHER TURNED CODER"), /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].topLeftAndImage
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].topLeftMaterial
+  }, /*#__PURE__*/React.createElement("h1", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeName
+  }, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeTitle
+  }, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("h3", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeDescription
+  }, "A PHILOSOPHER TURNED CODER"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].attList
+  })), /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/9eG1sV9.png",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
-  }), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the ", /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/contact"
-  }, "contact page!")), /*#__PURE__*/React.createElement("p", null, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "500+ hours in Coding Bootcamp"), /*#__PURE__*/React.createElement("li", null, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", null, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", null, "Expertise includes Formal Logic and Digital Ethics")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  })), /*#__PURE__*/React.createElement("p", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footerNod
+  }, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "500+ hours of Software Engineering Bootcamp at General Assembly"), /*#__PURE__*/React.createElement("li", null, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", null, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", null, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", null, "Expertise includes Formal Logic and Digital Ethics"), /*#__PURE__*/React.createElement("li", null, "300+ students taught with a 90% recommendation rate")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -888,18 +899,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes cHTjXpCQRt3P5Ps9uofS {
   }
 }
 .cpBhSBxa_1hjqWyjxJVH {
-  width: 100vw;
   height: 8rem;
   text-align: center;
 }
 .cpBhSBxa_1hjqWyjxJVH ._oETPRO9bgRtAEaJt69J {
   font-size: 2rem;
   font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
   animation: cHTjXpCQRt3P5Ps9uofS 5s linear;
 }
 .cpBhSBxa_1hjqWyjxJVH .DuDkOPd7Rxcm3oZBtmzQ {
   opacity: 0;
-}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAEA;EACI,YAAA;EACA,YAAA;EACA,kBAAA;AAAJ;AAGI;EACI,eAAA;EACA,iBAAA;EACA,yCAAA;AADR;AAGI;EACI,UAAA;AADR","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    width: 100vw;\n    height: 8rem;\n    text-align: center;\n \n\n    .displayFade {\n        font-size: 2rem;\n        font-weight: bold;\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: .0\n    }\n\n    \n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAEA;EAEI,YAAA;EACA,kBAAA;AADJ;AAII;EACI,eAAA;EACA,iBAAA;EACA,YAAA;EACA,8BAAA;EACA,yCAAA;AAFR;AAII;EACI,UAAA;AAFR","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    \n    height: 8rem;\n    text-align: center;\n \n\n    .displayFade {\n        font-size: 2rem;\n        font-weight: bold;\n        color: white;\n        text-shadow: 2px 2px 2px black;\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: .0\n    }\n\n    \n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"attributesList": `cpBhSBxa_1hjqWyjxJVH`,
@@ -1558,6 +1570,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap);"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   display: flex;
@@ -1568,13 +1581,44 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   margin-left: 3rem;
   margin-right: 3rem;
 }
-.luBJirBC3AbIwQNsEypk .SdE0OzVYSyWibKlylqhD {
-  width: 10vw;
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,WAAA;AAAR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .profileImage {\n        width: 10vw;\n    }\n}"],"sourceRoot":""}]);
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  border-bottom: 4px dotted white;
+}
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .Aw5sO1dBoOHwTQxLLb2m {
+  text-shadow: 2px 2px 2px white;
+}
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .pH3hxSOBP1V_K2z2Qfsi {
+  text-shadow: 2px 2px 2px white;
+}
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .faqTb21Nz7osoFxnsTb4 {
+  font-family: "Philosopher", sans-serif;
+}
+.luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .SdE0OzVYSyWibKlylqhD {
+  width: 40vw;
+}
+.luBJirBC3AbIwQNsEypk .bIC53aZ1YbYkKKHJLNZV {
+  font-weight: bold;
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;AAPR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
-	"profileImage": `SdE0OzVYSyWibKlylqhD`
+	"topLeftAndImage": `I69qLupTb0lXMgtHVWRj`,
+	"topLeftMaterial": `KAdFYwUkxuH3AfGOPQF8`,
+	"homeName": `Aw5sO1dBoOHwTQxLLb2m`,
+	"homeTitle": `pH3hxSOBP1V_K2z2Qfsi`,
+	"homeDescription": `faqTb21Nz7osoFxnsTb4`,
+	"profileImage": `SdE0OzVYSyWibKlylqhD`,
+	"footerNod": `bIC53aZ1YbYkKKHJLNZV`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2578,4 +2622,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.eb2d53965bdb25a25315d52a6bbcecf8.js.map
+//# sourceMappingURL=App.84d75455b2fb035a80601f891128cc7c.js.map
