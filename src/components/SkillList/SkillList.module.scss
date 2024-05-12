@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    margin-bottom: 5rem;
     
     .skillList {
         list-style: none;
@@ -12,8 +17,21 @@
         place-items: center;
         padding: 0;
 
-        .icon {
-            max-width: 3rem;
+        .skillItem {
+            box-shadow: 1px 1px 1px black;
+            border-radius: 5px;
+            display: flex;
+            gap: 5px;
+            width: 9rem;
+            background-color: lightgrey;
         }
+
+            .icon {
+                max-width: 3rem;
+            }
+
+            .skillName {
+                font-weight: bolder;
+            }
     }
 }

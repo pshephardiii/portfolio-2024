@@ -1,10 +1,9 @@
-import AttributesList from '../../components/AttributesList/AttributesList'
 import styles from './AboutPage.module.scss'
 
 export default function AboutPage(){
     return (
         <main className={styles.AboutPage}>
-            <AttributesList></AttributesList>
+            <h1>About Me</h1>
         <div className={styles.mainContent}>
             <div className={styles.aboutPageTop}>
                 <div className={styles.picAndCap}>

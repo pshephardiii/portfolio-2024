@@ -409,49 +409,85 @@ function ProjectList() {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function SkillList() {
-  const skills = ['JavaScript', 'HTML', 'CSS', 'MongoDB', 'JSON', 'React', 'Express.js', 'JSX', 'SCSS'];
-  const skillsIcons = ['https://i.imgur.com/fNTr29D.png', 'https://i.imgur.com/LwpNbJR.png', 'https://i.imgur.com/pAxoxNC.png', 'https://i.imgur.com/xPPh7jP.png', 'https://i.imgur.com/CyBT2em.png', 'https://i.imgur.com/lraKJkb.png', 'https://i.imgur.com/FsLutvP.png', 'https://i.imgur.com/IgCH7Hq.png', 'https://i.imgur.com/YVCimXg.png'];
+  const skills = ['JavaScript', 'HTML', 'CSS', 'MongoDB', 'JSON', 'React', 'Express.js', 'JSX', 'Sass'];
+  const skillsIcons = ['https://i.imgur.com/fNTr29D.png', 'https://i.imgur.com/LwpNbJR.png', 'https://i.imgur.com/pAxoxNC.png', 'https://i.imgur.com/xPPh7jP.png', 'https://i.imgur.com/CyBT2em.png', 'https://i.imgur.com/Zw00kc0.png', 'https://i.imgur.com/FsLutvP.png', 'https://i.imgur.com/IgCH7Hq.png', 'https://i.imgur.com/YVCimXg.png'];
   return /*#__PURE__*/React.createElement("div", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillListContainer
   }, /*#__PURE__*/React.createElement("ul", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillList
-  }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[0],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[0]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "Javascript")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[1],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[1]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "HTML5")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[2],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[2]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "CSS")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[3],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[3]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "MongoDB")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[4],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[4]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), " ", /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "JSON")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[5],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[5]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), " ", /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "React")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[6],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[6]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "Express.js")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[7],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[7]
-  })), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "JSX")), /*#__PURE__*/React.createElement("li", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
+  }, /*#__PURE__*/React.createElement("img", {
     src: skillsIcons[8],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[8]
-  }))));
+  }), /*#__PURE__*/React.createElement("p", {
+    className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
+  }, "Sass"))));
 }
 
 /***/ }),
@@ -484,45 +520,43 @@ root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ AboutPage)
 /* harmony export */ });
-/* harmony import */ var _components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/AttributesList/AttributesList */ "./src/components/AttributesList/AttributesList.js");
-/* harmony import */ var _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AboutPage.module.scss */ "./src/pages/AboutPage/AboutPage.module.scss");
+/* harmony import */ var _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AboutPage.module.scss */ "./src/pages/AboutPage/AboutPage.module.scss");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 function AboutPage() {
   return /*#__PURE__*/React.createElement("main", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].AboutPage
-  }, /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].mainContent
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].AboutPage
+  }, /*#__PURE__*/React.createElement("h1", null, "About Me"), /*#__PURE__*/React.createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mainContent
   }, /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPageTop
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutPageTop
   }, /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].picAndCap
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].picAndCap
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/hWb88UB.jpeg",
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutImage,
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutImage,
     title: "Paul and Baxter",
     alt: "A man sitting on a chair with a Yorkie on his lap"
   }), /*#__PURE__*/React.createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutCaption
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutCaption
   }, "Pictured: My dog Baxter and I")), /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutQuoteAndStrengths
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutQuoteAndStrengths
   }, /*#__PURE__*/React.createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutQuote
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutQuote
   }, "\"Paul is the greatest coder alive.\" - Baxter, Ph.D"), /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutStrengths
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutStrengths
   }, /*#__PURE__*/React.createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].strengthsHeader
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].strengthsHeader
   }, "Strengths Include:"), /*#__PURE__*/React.createElement("ul", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutStrengthsList
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutStrengthsList
   }, /*#__PURE__*/React.createElement("li", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].listItem
   }, "Logic-based languages and problem-solving"), /*#__PURE__*/React.createElement("li", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].listItem
   }, "Backend model attribution and functionality"), /*#__PURE__*/React.createElement("li", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].listItem
   }, "Component dataflow, structure, and design"))))), /*#__PURE__*/React.createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutSummary
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutSummary
   }, /*#__PURE__*/React.createElement("p", null, "I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!). While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech."), /*#__PURE__*/React.createElement("p", null, "My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways. My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital \"nudging,\" and the use of algorithms to determine content viewability."), /*#__PURE__*/React.createElement("p", null, "My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action. Finally, my familiarity with professional conference presentations has drastically improved my public speaking skills, confidence, and my ability to \"read a room.\""), /*#__PURE__*/React.createElement("p", null, "It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software development landscape!"), /*#__PURE__*/React.createElement("p", null, "To take a look at my resume, click ", /*#__PURE__*/React.createElement("a", {
     href: ""
   }, "here!")))));
@@ -566,21 +600,23 @@ function ContactPage() {
 /* harmony export */   "default": () => (/* binding */ HomePage)
 /* harmony export */ });
 /* harmony import */ var _components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/SkillList/SkillList */ "./src/components/SkillList/SkillList.js");
-/* harmony import */ var _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomePage.module.scss */ "./src/pages/HomePage/HomePage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/AttributesList/AttributesList */ "./src/components/AttributesList/AttributesList.js");
+/* harmony import */ var _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.module.scss */ "./src/pages/HomePage/HomePage.module.scss");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 
 
 
 function HomePage() {
   return /*#__PURE__*/React.createElement("main", {
-    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].HomePage
-  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("img", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].HomePage
+  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/9eG1sV9.png",
-    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].profileImage
-  }), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("p", null, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the ", /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
+  }), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("p", null, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the ", /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/contact"
-  }, "contact page!")));
+  }, "contact page!")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -909,6 +945,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.rXtzMJoGkU1rsQf4DiH2 {
   border-radius: 10px;
   border: 2px solid darkblue;
   padding: 2rem;
+  box-shadow: 2px 2px 2px darkblue;
 }
 .rXtzMJoGkU1rsQf4DiH2 .t1tgf9a8BtfZ8nzZ5Dm3 .EY__rqRg4_GocB6j5aUc {
   display: flex;
@@ -936,7 +973,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.rXtzMJoGkU1rsQf4DiH2 {
   background-color: darkblue;
   border: 2px solid lightgray;
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/components/ContactForm/ContactForm.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAJ;AAEI;EACI,uCAAA;EACA,oBAAA;EACA,wCAAA;AAAR;AAGI;EACI,4BAAA;EACA,mBAAA;EACA,0BAAA;EACA,aAAA;AADR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AADZ;AAGY;EACI,kBAAA;EACA,0BAAA;EACA,uCAAA;EACA,mCAAA;AADhB;AAIY;EACI,gCAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,kBAAA;EACA,mCAAA;EACA,YAAA;AAFhB;AAIY;EACI,YAAA;EACA,0BAAA;EACA,2BAAA;EACA,eAAA;AAFhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.ContactForm {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 3rem;\n\n    .formHeader {\n        font-family: \"Courier Prime\", monospace;\n        font-weight: lighter;\n        font-size: clamp(1.25rem, 2.5vw, 2.5rem);\n    }\n\n    .formContainer {\n        background-color: whitesmoke;\n        border-radius: 10px;\n        border: 2px solid darkblue;\n        padding: 2rem;\n\n        .contactForm {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            gap: 2rem;\n\n            .formInput {\n                border-radius: 5px;\n                border: 2px solid darkblue;\n                font-family: 'Courier Prime', monospace;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n            }\n\n            .formSubmit {\n                font-family: \"Montserrat\", serif;\n                font-weight: bolder;\n                background-color: lightgray;\n                border: 2px solid darkblue;\n                border-radius: 5px;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                width: 10rem;\n            }\n            .formSubmit:hover {\n                color: white;\n                background-color: darkblue;\n                border: 2px solid lightgray;\n                cursor: pointer;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ContactForm/ContactForm.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAJ;AAEI;EACI,uCAAA;EACA,oBAAA;EACA,wCAAA;AAAR;AAGI;EACI,4BAAA;EACA,mBAAA;EACA,0BAAA;EACA,aAAA;EACA,gCAAA;AADR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AADZ;AAGY;EACI,kBAAA;EACA,0BAAA;EACA,uCAAA;EACA,mCAAA;AADhB;AAKY;EACI,gCAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,kBAAA;EACA,mCAAA;EACA,YAAA;AAHhB;AAKY;EACI,YAAA;EACA,0BAAA;EACA,2BAAA;EACA,eAAA;AAHhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.ContactForm {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 3rem;\n\n    .formHeader {\n        font-family: \"Courier Prime\", monospace;\n        font-weight: lighter;\n        font-size: clamp(1.25rem, 2.5vw, 2.5rem);\n    }\n\n    .formContainer {\n        background-color: whitesmoke;\n        border-radius: 10px;\n        border: 2px solid darkblue;\n        padding: 2rem;\n        box-shadow: 2px 2px 2px darkblue;\n\n        .contactForm {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            gap: 2rem;\n\n            .formInput {\n                border-radius: 5px;\n                border: 2px solid darkblue;\n                font-family: 'Courier Prime', monospace;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                \n            }\n\n            .formSubmit {\n                font-family: \"Montserrat\", serif;\n                font-weight: bolder;\n                background-color: lightgray;\n                border: 2px solid darkblue;\n                border-radius: 5px;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                width: 10rem;\n            }\n            .formSubmit:hover {\n                color: white;\n                background-color: darkblue;\n                border: 2px solid lightgray;\n                cursor: pointer;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ContactForm": `rXtzMJoGkU1rsQf4DiH2`,
@@ -1001,7 +1038,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
 }
 .QpVD3qAS0nYBtoQqAYoe .mW8_jbYVqUl59UscNYFa {
   position: fixed;
-  right: 1rem;
+  right: 3rem;
   top: 0;
   margin-top: 0;
   font-family: "MonteCarlo", cursive;
@@ -1012,7 +1049,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   .mW8_jbYVqUl59UscNYFa {
     display: none;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAGA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;EACA,aAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;AAKI;EACI,eAAA;EACA,WAAA;EACA,MAAA;EACA,aAAA;EACA,kCAAA;EACA,kBAAA;AAHR;;AAOA;EACI;IACI,aAAA;EAJN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n    z-index: 1000;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n\n    .signature {\n        position: fixed;\n        right: 1rem;\n        top: 0;\n        margin-top: 0;\n        font-family: \"MonteCarlo\", cursive;\n        font-size: 1.25rem;\n    }\n}\n\n@media screen and (width < 35rem) {\n    .signature {\n        display: none;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAGA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;EACA,aAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;AAKI;EACI,eAAA;EACA,WAAA;EACA,MAAA;EACA,aAAA;EACA,kCAAA;EACA,kBAAA;AAHR;;AAOA;EACI;IACI,aAAA;EAJN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n    z-index: 1000;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n\n    .signature {\n        position: fixed;\n        right: 3rem;\n        top: 0;\n        margin-top: 0;\n        font-family: \"MonteCarlo\", cursive;\n        font-size: 1.25rem;\n    }\n}\n\n@media screen and (width < 35rem) {\n    .signature {\n        display: none;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
@@ -1271,6 +1308,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  margin-bottom: 5rem;
 }
 .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U {
   list-style: none;
@@ -1282,14 +1324,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
   place-items: center;
   padding: 0;
 }
+.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .jLKAruXAQvpHs1rYOKQx {
+  box-shadow: 1px 1px 1px black;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  width: 9rem;
+  background-color: lightgrey;
+}
 .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .ww96wplc3iiswNHki006 {
   max-width: 3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,eAAA;AACZ","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .icon {\n            max-width: 3rem;\n        }\n    }\n}"],"sourceRoot":""}]);
+}
+.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .UTEmCPet931KAoQhyEWd {
+  font-weight: bolder;
+}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"skillListContainer": `TgdELLR1YDwmFP4lxegJ`,
 	"skillList": `s6wolvpV50cfcaoAIN0U`,
-	"icon": `ww96wplc3iiswNHki006`
+	"skillItem": `jLKAruXAQvpHs1rYOKQx`,
+	"icon": `ww96wplc3iiswNHki006`,
+	"skillName": `UTEmCPet931KAoQhyEWd`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2497,4 +2552,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a09267b122b8c5a995effda91916480c.js.map
+//# sourceMappingURL=App.42ae15c60645d9407e37aaaf7d0d95b6.js.map

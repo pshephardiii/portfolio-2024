@@ -17,6 +17,7 @@
         border-radius: 10px;
         border: 2px solid darkblue;
         padding: 2rem;
+        box-shadow: 2px 2px 2px darkblue;
 
         .contactForm {
             display: flex;
@@ -29,6 +30,7 @@
                 border: 2px solid darkblue;
                 font-family: 'Courier Prime', monospace;
                 font-size: clamp(1rem, 2vw, 1.5rem);
+                
             }
 
             .formSubmit {
