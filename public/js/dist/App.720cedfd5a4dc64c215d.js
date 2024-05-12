@@ -202,7 +202,9 @@ const NavBar = () => {
 function NavFooter() {
   return /*#__PURE__*/React.createElement("div", {
     className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].NavFooter
-  }, /*#__PURE__*/React.createElement("a", {
+  }, /*#__PURE__*/React.createElement("p", {
+    className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Copyright
+  }, "\xA9 Paul Shephard 2024"), /*#__PURE__*/React.createElement("a", {
     href: "",
     className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].footerLink,
     target: "_blank"
@@ -611,12 +613,12 @@ function ContactPage() {
 function HomePage() {
   return /*#__PURE__*/React.createElement("main", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].HomePage
-  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/React.createElement("h1", null, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", null, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("h4", null, "A PHILOSOPHER TURNED CODER"), /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/9eG1sV9.png",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
-  }), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("p", null, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the ", /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("h4", null, "Welcome to my Portfolio! If you have any questions or would like to get a hold of me, feel free to navigate to the ", /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/contact"
-  }, "contact page!")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, "contact page!")), /*#__PURE__*/React.createElement("p", null, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "500+ hours in Coding Bootcamp"), /*#__PURE__*/React.createElement("li", null, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", null, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", null, "Expertise includes Formal Logic and Digital Ethics")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -1093,6 +1095,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Bb3ND5DsBlpFzlNbzVHu {
   gap: 7.5rem;
   border-top: 1px solid black;
 }
+.Bb3ND5DsBlpFzlNbzVHu .gqx_VKknoy57wOzb7JcS {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+}
 .Bb3ND5DsBlpFzlNbzVHu .rc6OcOz_ssuzPFYDVHuK {
   display: flex;
   align-items: center;
@@ -1104,10 +1111,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Bb3ND5DsBlpFzlNbzVHu {
 }
 .Bb3ND5DsBlpFzlNbzVHu .rc6OcOz_ssuzPFYDVHuK .OCIWcgbb2IohLipUQV1I:hover {
   height: 3rem;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;AACJ;AACI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AACR;AACQ;EACI,eAAA;EACA,kBAAA;AACZ;AACQ;EACI,YAAA;AACZ","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100%;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
+}
+
+@media screen and (width < 45rem) and (width > 25rem) {
+  .Bb3ND5DsBlpFzlNbzVHu {
+    gap: 5rem;
+  }
+  .gqx_VKknoy57wOzb7JcS {
+    position: static !important;
+  }
+}
+@media screen and (width <= 25rem) {
+  .Bb3ND5DsBlpFzlNbzVHu {
+    gap: 3rem;
+  }
+  .gqx_VKknoy57wOzb7JcS {
+    position: static !important;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;AACJ;AACI;EACI,kBAAA;EACA,UAAA;EACA,SAAA;AACR;AAEI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AAAR;AAEQ;EACI,eAAA;EACA,kBAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;;AAKA;EACI;IACI,SAAA;EAFN;EAKE;IACI,2BAAA;EAHN;AACF;AAMA;EACI;IACI,SAAA;EAJN;EAME;IACI,2BAAA;EAJN;AACF","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100%;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n\n    .Copyright {\n        position: absolute;\n        left: 1rem;\n        bottom: 0;\n    }\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n@media screen and (width < 45rem) and (width > 25rem) {\n    .NavFooter {\n        gap: 5rem;\n    }\n\n    .Copyright {\n        position: static !important;\n    }\n}\n\n@media screen and (width <= 25rem) {\n    .NavFooter {\n        gap: 3rem;\n    }\n    .Copyright {\n        position: static !important;\n    }\n}\n\n\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavFooter": `Bb3ND5DsBlpFzlNbzVHu`,
+	"Copyright": `gqx_VKknoy57wOzb7JcS`,
 	"footerLink": `rc6OcOz_ssuzPFYDVHuK`,
 	"footerIcon": `OCIWcgbb2IohLipUQV1I`
 };
@@ -1194,7 +1219,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
 }
 .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .v20QUUrVOvZ6R7iVz5Wr {
   width: 40rem;
-  border-radius: 5%;
+  border-radius: 10px;
   box-shadow: 2px 2px 1px black;
   opacity: 1;
 }
@@ -1267,7 +1292,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
     width: 22rem;
     bottom: 20rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,6BAAA;AAFZ;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,UAAA;AAJZ;AAOQ;EACI,6BAAA;EACA,YAAA;EACA,eAAA;AALZ;AAQQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,YAAA;AANZ;AASQ;EACI,eAAA;AAPZ;AAWI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;EACA,cAAA;EACA,eAAA;AATR;AAYI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;AAVR;;AAeA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EAZN;EAcM;IACI,YAAA;IACA,aAAA;IACA,cAAA;EAZV;EAcU;IACI,iBAAA;EAZd;EAeU;IACI,eAAA;EAbd;EAgBU;IACI,eAAA;EAdd;EAiBU;IACI,YAAA;EAfd;EAkBU;IACI,YAAA;EAhBd;EAoBM;IACI,iBAAA;IACA,YAAA;IACA,aAAA;EAlBV;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 42rem;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n        }\n\n        .projectLinks {\n            font-size: 1.5rem;\n        }\n\n        .link:hover {\n            color: white;\n            text-shadow: 1px 1px 1px blue;\n\n        }\n\n        .projectImageVisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: 1;\n        }\n\n        .projectImageVisible:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n            cursor: pointer;\n        }\n\n        .projectImageInvisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: .1;\n        }\n\n        .projectImageInvisible:hover {\n            cursor: pointer;\n        }\n    }\n\n    .projectPopupVisible {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        font-weight: bold;\n        z-index: 20000; \n        cursor: pointer;\n    }\n\n    .projectPopupInvisible {\n        display: none;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        z-index: 20000;\n        \n    }\n}\n\n@media screen and (width < 45rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 27rem;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n            }\n\n            .projectLinks {\n                font-size: 1rem;\n            }\n\n            .projectImageVisible {\n                width: 25rem;\n            }\n\n            .projectImageInvisible {\n                width: 25rem;\n            }\n        }\n\n        .projectPopupVisible {\n            font-size: .9rem;\n            width: 22rem;\n            bottom: 20rem;\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,6BAAA;AAFZ;AAMQ;EACI,YAAA;EACA,mBAAA;EACA,6BAAA;EACA,UAAA;AAJZ;AAOQ;EACI,6BAAA;EACA,YAAA;EACA,eAAA;AALZ;AAQQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,YAAA;AANZ;AASQ;EACI,eAAA;AAPZ;AAWI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;EACA,cAAA;EACA,eAAA;AATR;AAYI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;AAVR;;AAeA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EAZN;EAcM;IACI,YAAA;IACA,aAAA;IACA,cAAA;EAZV;EAcU;IACI,iBAAA;EAZd;EAeU;IACI,eAAA;EAbd;EAgBU;IACI,eAAA;EAdd;EAiBU;IACI,YAAA;EAfd;EAkBU;IACI,YAAA;EAhBd;EAoBM;IACI,iBAAA;IACA,YAAA;IACA,aAAA;EAlBV;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 42rem;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n        }\n\n        .projectLinks {\n            font-size: 1.5rem;\n        }\n\n        .link:hover {\n            color: white;\n            text-shadow: 1px 1px 1px blue;\n\n        }\n\n        .projectImageVisible {\n            width: 40rem;\n            border-radius: 10px;\n            box-shadow: 2px 2px 1px black;\n            opacity: 1;\n        }\n\n        .projectImageVisible:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n            cursor: pointer;\n        }\n\n        .projectImageInvisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: .1;\n        }\n\n        .projectImageInvisible:hover {\n            cursor: pointer;\n        }\n    }\n\n    .projectPopupVisible {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        font-weight: bold;\n        z-index: 20000; \n        cursor: pointer;\n    }\n\n    .projectPopupInvisible {\n        display: none;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        z-index: 20000;\n        \n    }\n}\n\n@media screen and (width < 45rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 27rem;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n            }\n\n            .projectLinks {\n                font-size: 1rem;\n            }\n\n            .projectImageVisible {\n                width: 25rem;\n            }\n\n            .projectImageInvisible {\n                width: 25rem;\n            }\n        }\n\n        .projectPopupVisible {\n            font-size: .9rem;\n            width: 22rem;\n            bottom: 20rem;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectList": `JHKOwgw57XWKRmWEcOoS`,
@@ -1331,13 +1356,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
   gap: 5px;
   width: 9rem;
   background-color: lightgrey;
+  padding: 2px 1px;
 }
 .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .ww96wplc3iiswNHki006 {
   max-width: 3rem;
 }
 .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .UTEmCPet931KAoQhyEWd {
   font-weight: bolder;
-}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;EACA,gBAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n            padding: 2px 1px;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"skillListContainer": `TgdELLR1YDwmFP4lxegJ`,
@@ -2552,4 +2578,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.42ae15c60645d9407e37aaaf7d0d95b6.js.map
+//# sourceMappingURL=App.eb2d53965bdb25a25315d52a6bbcecf8.js.map
