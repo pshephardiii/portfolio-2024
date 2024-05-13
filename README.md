@@ -10,7 +10,7 @@
 + Deployed via DigitalOcean
 
 ## Live Link
-
+https://portfolio.paulshephard.me/home
 
 ## Screenshots
 
