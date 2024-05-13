@@ -36,3 +36,38 @@
             }
     }
 }
+
+@media screen and (width < 40rem) and (width > 30rem) {
+    .skillListContainer {
+        width: 90vw;
+
+        .skillList {
+            width: 90vw;
+            row-gap: 1rem;
+            column-gap: 1rem;
+
+            .skillItem {
+                width: 8rem;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (width <= 30rem) {
+    .skillListContainer {
+        width: 90vw;
+
+        .skillList {
+            width: 90vw;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 1rem;
+            column-gap: 1rem;
+
+            .skillItem {
+                width: 8rem;
+                font-size: 12px;
+            }
+        }
+    }
+}

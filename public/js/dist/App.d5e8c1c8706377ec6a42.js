@@ -639,9 +639,7 @@ function HomePage() {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Served as Team Leader and GitHub Manager")), /*#__PURE__*/React.createElement("ul", {
-    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeList
-  }, /*#__PURE__*/React.createElement("li", {
+  }, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
@@ -1393,7 +1391,39 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
 }
 .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .UTEmCPet931KAoQhyEWd {
   font-weight: bolder;
-}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;EACA,gBAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n            padding: 2px 1px;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}"],"sourceRoot":""}]);
+}
+
+@media screen and (width < 40rem) and (width > 30rem) {
+  .TgdELLR1YDwmFP4lxegJ {
+    width: 90vw;
+  }
+  .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U {
+    width: 90vw;
+    row-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .jLKAruXAQvpHs1rYOKQx {
+    width: 8rem;
+    font-size: 12px;
+  }
+}
+@media screen and (width <= 30rem) {
+  .TgdELLR1YDwmFP4lxegJ {
+    width: 90vw;
+  }
+  .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U {
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .jLKAruXAQvpHs1rYOKQx {
+    width: 8rem;
+    font-size: 12px;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;EACA,gBAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB;;AAMA;EACI;IACI,WAAA;EAHN;EAKM;IACI,WAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EAHf;EAKU;IACI,WAAA;IACA,eAAA;EAHd;AACF;AAQA;EACI;IACI,WAAA;EANN;EAQM;IACI,WAAA;IACA,8BAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EANf;EAQU;IACI,WAAA;IACA,eAAA;EANd;AACF","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n            padding: 2px 1px;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            grid-template-columns: 1fr 1fr;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"skillListContainer": `TgdELLR1YDwmFP4lxegJ`,
@@ -1626,17 +1656,23 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
 }
 .luBJirBC3AbIwQNsEypk .bIC53aZ1YbYkKKHJLNZV {
   font-weight: bold;
+  text-align: center;
 }
 .luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 {
+  width: 90vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 3rem;
+  align-items: center;
 }
 .luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB {
-  list-style: circle;
-  width: 40vw;
+  width: 90vw;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  align-content: flex-start;
+  padding: 0;
 }
 .luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ {
   margin-bottom: 2rem;
@@ -1647,7 +1683,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   box-shadow: 2px 2px 2px 2px black;
   color: black;
   text-shadow: 1px 1px 1px white;
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;AAPR;AAUI;EACI,aAAA;EACA,uBAAA;EACA,uBAAA;EACA,SAAA;AARR;AAUQ;EACI,kBAAA;EACA,WAAA;EACA,gBAAA;AARZ;AAUY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;AARhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n    }\n\n    .experienceLists {\n        display: flex;\n        justify-content: center;\n        align-items: flex-start;\n        gap: 3rem;\n\n        .homeList {\n            list-style: circle;\n            width: 40vw;\n            list-style: none;\n\n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+  justify-self: center;
+}
+
+@media screen and (width < 40rem) {
+  .agtVcU5x6yqGpyvpV7G0 {
+    gap: 2rem !important;
+  }
+  .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ {
+    font-size: 1rem !important;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;EACA,kBAAA;AAPR;AAUI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AARR;AAUQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AARZ;AAUY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EAEA,oBAAA;AAThB;;AAeA;EACI;IACI,oBAAA;EAZN;EAgBU;IACI,0BAAA;EAdd;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 2rem;\n                 column-gap: 2rem;\n            align-content: flex-start;\n            padding: 0;\n            \n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                \n                justify-self: center;\n            }\n        }\n    }\n}\n\n@media screen and (width < 40rem) {\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
@@ -2664,4 +2710,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.2fec1f6989b0904972af01b88bcd1232.js.map
+//# sourceMappingURL=App.cd5c661143fcb32eef43d3db74d6eca8.js.map
