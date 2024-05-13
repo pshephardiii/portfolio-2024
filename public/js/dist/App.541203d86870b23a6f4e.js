@@ -625,7 +625,7 @@ function HomePage() {
   }, "A PHILOSOPHER TURNED CODER"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].attList
   })), /*#__PURE__*/React.createElement("img", {
-    src: "https://i.imgur.com/9eG1sV9.png",
+    src: "https://i.imgur.com/yZqYVPi.png",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
   })), /*#__PURE__*/React.createElement("p", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footerNod
@@ -637,13 +637,13 @@ function HomePage() {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "500+ hours of Software Engineering Bootcamp at General Assembly"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", {
-    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", {
-    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "Expertise includes Formal Logic and Digital Ethics"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, "300+ students taught with a 90% recommendation rate"))), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
@@ -1652,7 +1652,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   font-family: "Philosopher", sans-serif;
 }
 .luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .SdE0OzVYSyWibKlylqhD {
-  width: 40vw;
+  height: 40vw;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px 2px black;
+  background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
 }
 .luBJirBC3AbIwQNsEypk .bIC53aZ1YbYkKKHJLNZV {
   font-weight: bold;
@@ -1693,7 +1698,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ {
     font-size: 1rem !important;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;EACA,kBAAA;AAPR;AAUI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AARR;AAUQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AARZ;AAUY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EAEA,oBAAA;AAThB;;AAeA;EACI;IACI,oBAAA;EAZN;EAgBU;IACI,0BAAA;EAdd;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 2rem;\n                 column-gap: 2rem;\n            align-content: flex-start;\n            padding: 0;\n            \n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                \n                justify-self: center;\n            }\n        }\n    }\n}\n\n@media screen and (width < 40rem) {\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,YAAA;EACA,mBAAA;EACA,gBAAA;EACA,kBAAA;EACA,kCAAA;EACA,mEAAA;AAJZ;AAWI;EACI,iBAAA;EACA,kBAAA;AATR;AAYI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAVR;AAYQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AAVZ;AAYY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EAEA,oBAAA;AAXhB;;AAiBA;EACI;IACI,oBAAA;EAdN;EAkBU;IACI,0BAAA;EAhBd;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            height: 40vw;\n            margin-bottom: 2rem;\n            margin-top: 2rem;\n            border-radius: 50%;\n            box-shadow: 2px 2px 10px 2px black;\n            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n            \n            \n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 2rem;\n                 column-gap: 2rem;\n            align-content: flex-start;\n            padding: 0;\n            \n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                \n                justify-self: center;\n            }\n        }\n    }\n}\n\n@media screen and (width < 40rem) {\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
@@ -2710,4 +2715,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.cd5c661143fcb32eef43d3db74d6eca8.js.map
+//# sourceMappingURL=App.4916b586e2fee8ec8395c94a418e33f4.js.map

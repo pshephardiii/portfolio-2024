@@ -37,7 +37,14 @@
         }
 
         .profileImage {
-            width: 40vw;
+            height: 40vw;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px 2px black;
+            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
+            
+            
         }
 
     }
