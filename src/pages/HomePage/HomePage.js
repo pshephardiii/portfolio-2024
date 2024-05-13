@@ -1,7 +1,6 @@
 import SkillList from '../../components/SkillList/SkillList'
 import AttributesList from '../../components/AttributesList/AttributesList'
 import styles from './HomePage.module.scss'
-import { Link } from 'react-router-dom'
 
 export default function HomePage(){
     return (
