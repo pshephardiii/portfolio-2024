@@ -11,4 +11,16 @@
     .projectsHeadline {
         text-align: center;
     }
+    .projectsMessage {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (width > 70rem) {
+    .projectsHeadline {
+        font-size: 3vw;
+    }
+    .projectsMessage {
+        font-size: 2vw !important;
+    }
 }

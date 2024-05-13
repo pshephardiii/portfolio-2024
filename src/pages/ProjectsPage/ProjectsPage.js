@@ -5,7 +5,7 @@ export default function ProjectsPage(){
     return (
         <main className={styles.ProjectsPage}>
             <h1 className={styles.projectsHeadline}>Projects</h1>
-            <p>Click on image or links for more!</p>
+            <p className={styles.projectsMessage}>Click on image or links for more!</p>
             <ProjectList></ProjectList>
         </main>
     )

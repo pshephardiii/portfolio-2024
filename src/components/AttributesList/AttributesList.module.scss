@@ -29,6 +29,16 @@
     .null {
         opacity: .0
     }
+}
 
-    
+@media screen and (width < 40rem) {
+    .displayFade {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (width > 70rem) {
+    .displayFade {
+        font-size: 3vw !important;
+    }
 }
