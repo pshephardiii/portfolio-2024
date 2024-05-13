@@ -16,14 +16,18 @@ export default function HomePage(){
                 <img src='https://i.imgur.com/9eG1sV9.png' className={styles.profileImage}></img>
             </div>
             <p className={styles.footerNod}>For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!</p>
-            <ul>
-                <li>500+ hours of Software Engineering Bootcamp at General Assembly</li>
-                <li>Granted Full-Stack Unit MVP and Cleanest Code Award</li>
-                <li>Served as Team Leader and GitHub Manager</li>
-                <li>Background in Academic Research and Education</li>
-                <li>Expertise includes Formal Logic and Digital Ethics</li>
-                <li>300+ students taught with a 90% recommendation rate</li>
-            </ul>
+            <div className={styles.experienceLists}>
+                <ul className={styles.homeList}>
+                    <li className={styles.homeListItem}>500+ hours of Software Engineering Bootcamp at General Assembly</li>
+                    <li className={styles.homeListItem}>Granted Full-Stack Unit MVP and Cleanest Code Award</li>
+                    <li className={styles.homeListItem}>Served as Team Leader and GitHub Manager</li>
+                </ul>
+                <ul className={styles.homeList}>
+                    <li className={styles.homeListItem}>Background in Academic Research and Education</li>
+                    <li className={styles.homeListItem}>Expertise includes Formal Logic and Digital Ethics</li>
+                    <li className={styles.homeListItem}>300+ students taught with a 90% recommendation rate</li>
+                </ul>
+            </div>
             <SkillList></SkillList>
         </main>
     )

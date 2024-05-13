@@ -629,7 +629,25 @@ function HomePage() {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
   })), /*#__PURE__*/React.createElement("p", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footerNod
-  }, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "500+ hours of Software Engineering Bootcamp at General Assembly"), /*#__PURE__*/React.createElement("li", null, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", null, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", null, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", null, "Expertise includes Formal Logic and Digital Ethics"), /*#__PURE__*/React.createElement("li", null, "300+ students taught with a 90% recommendation rate")), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, "For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!"), /*#__PURE__*/React.createElement("div", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].experienceLists
+  }, /*#__PURE__*/React.createElement("ul", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeList
+  }, /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "500+ hours of Software Engineering Bootcamp at General Assembly"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Served as Team Leader and GitHub Manager")), /*#__PURE__*/React.createElement("ul", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeList
+  }, /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "Expertise includes Formal Logic and Digital Ethics"), /*#__PURE__*/React.createElement("li", {
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
+  }, "300+ students taught with a 90% recommendation rate"))), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -1608,7 +1626,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
 }
 .luBJirBC3AbIwQNsEypk .bIC53aZ1YbYkKKHJLNZV {
   font-weight: bold;
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;AAPR","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n    }\n}"],"sourceRoot":""}]);
+}
+.luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB {
+  list-style: circle;
+  width: 40vw;
+  list-style: none;
+}
+.luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;AAAZ;AAEY;EACI,8BAAA;AAAhB;AAGY;EACI,8BAAA;AADhB;AAIY;EACI,sCAAA;AAFhB;AAMQ;EACI,WAAA;AAJZ;AASI;EACI,iBAAA;AAPR;AAUI;EACI,aAAA;EACA,uBAAA;EACA,uBAAA;EACA,SAAA;AARR;AAUQ;EACI,kBAAA;EACA,WAAA;EACA,gBAAA;AARZ;AAUY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;AARhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 5rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            width: 40vw;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n            }\n        }\n\n        .profileImage {\n            width: 40vw;\n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n    }\n\n    .experienceLists {\n        display: flex;\n        justify-content: center;\n        align-items: flex-start;\n        gap: 3rem;\n\n        .homeList {\n            list-style: circle;\n            width: 40vw;\n            list-style: none;\n\n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
@@ -1618,7 +1657,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"homeTitle": `pH3hxSOBP1V_K2z2Qfsi`,
 	"homeDescription": `faqTb21Nz7osoFxnsTb4`,
 	"profileImage": `SdE0OzVYSyWibKlylqhD`,
-	"footerNod": `bIC53aZ1YbYkKKHJLNZV`
+	"footerNod": `bIC53aZ1YbYkKKHJLNZV`,
+	"experienceLists": `agtVcU5x6yqGpyvpV7G0`,
+	"homeList": `S1HmR7yheTytiIHpiMGB`,
+	"homeListItem": `eLxNMbsTFENT7X9xuYCQ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2622,4 +2664,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.84d75455b2fb035a80601f891128cc7c.js.map
+//# sourceMappingURL=App.2fec1f6989b0904972af01b88bcd1232.js.map
