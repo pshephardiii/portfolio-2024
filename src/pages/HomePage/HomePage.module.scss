@@ -45,10 +45,7 @@
             border-radius: 50%;
             box-shadow: 2px 2px 10px 2px black;
             background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
-            
-            
         }
-
     }
 
     .footerNod {
@@ -125,7 +122,6 @@
         gap: 2rem !important;
 
         .homeList {
-            
             .homeListItem {
                 font-size: 1rem !important;
             }
@@ -139,7 +135,6 @@
 @media screen and (width <= 30rem) {
     .topLeftAndImage {
         gap: 0;
-
         .topLeftMaterial {
 
             .homeName {
@@ -155,9 +150,7 @@
     }
     .experienceLists {
         gap: 2rem !important;
-
         .homeList {
-            
             .homeListItem {
                 font-size: 1rem !important;
             }

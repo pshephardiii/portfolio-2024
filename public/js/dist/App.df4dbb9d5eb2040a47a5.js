@@ -26,7 +26,6 @@ function AttributesList() {
   const className = toggle ? "".concat(_AttributesList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].displayFade) : "".concat(_AttributesList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].null);
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     const att = document.getElementById('display');
-    console.log(att);
     if (attribute === attributes[9]) {
       setAttribute(attributes[0]);
       setNum(1);
@@ -37,7 +36,6 @@ function AttributesList() {
     setTimeout(displayAttribute, 4950);
     function displayAttribute() {
       setToggle(false);
-      console.log(att);
       setTimeout(() => {
         setRun(!run);
         setToggle(true);
@@ -229,33 +227,6 @@ function NavFooter() {
     title: "LinkedIn",
     className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].footerIcon
   })));
-}
-
-/***/ }),
-
-/***/ "./src/components/ProjectItem/ProjectItem.js":
-/*!***************************************************!*\
-  !*** ./src/components/ProjectItem/ProjectItem.js ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ProjectItem)
-/* harmony export */ });
-/* harmony import */ var _ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProjectItem.module.scss */ "./src/components/ProjectItem/ProjectItem.module.scss");
-/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-function ProjectItem(_ref) {
-  let {
-    project
-  } = _ref;
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, project.name), /*#__PURE__*/React.createElement("h3", null, project.summary), /*#__PURE__*/React.createElement("p", null, project.tools), /*#__PURE__*/React.createElement("img", {
-    src: "".concat(project.image)
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("a", {
-    href: "".concat(project.githubLink)
-  }, "GitHub Repository"), /*#__PURE__*/React.createElement("a", {
-    href: "".concat(project.liveProjectLink)
-  }, "Live Project Link")), /*#__PURE__*/React.createElement("p", null, project.description));
 }
 
 /***/ }),
@@ -488,7 +459,7 @@ function SkillList() {
     src: skillsIcons[4],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[4]
-  }), " ", /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/React.createElement("p", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
   }, "JSON")), /*#__PURE__*/React.createElement("li", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
@@ -496,7 +467,7 @@ function SkillList() {
     src: skillsIcons[5],
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icon,
     title: skills[5]
-  }), " ", /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/React.createElement("p", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillName
   }, "React")), /*#__PURE__*/React.createElement("li", {
     className: _SkillList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].skillItem
@@ -709,60 +680,6 @@ function HomePage() {
 
 /***/ }),
 
-/***/ "./src/pages/ProjectShowPage/ProjectShowPage.js":
-/*!******************************************************!*\
-  !*** ./src/pages/ProjectShowPage/ProjectShowPage.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ProjectShowPage)
-/* harmony export */ });
-/* harmony import */ var _components_ProjectItem_ProjectItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/ProjectItem/ProjectItem */ "./src/components/ProjectItem/ProjectItem.js");
-/* harmony import */ var _ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProjectShowPage.module.scss */ "./src/pages/ProjectShowPage/ProjectShowPage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utilities_projects_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utilities/projects-api */ "./src/utilities/projects-api.js");
-/* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-
-
-
-function ProjectShowPage() {
-  const [project, setProject] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
-    name: '',
-    summary: '',
-    tools: '',
-    image: '',
-    description: '',
-    githubLink: '',
-    liveProjectLink: ''
-  });
-  const {
-    id
-  } = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.useParams)();
-  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
-    async function getProject() {
-      try {
-        const showProject = await _utilities_projects_api__WEBPACK_IMPORTED_MODULE_4__.showProject(id);
-        setProject(showProject);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    getProject();
-  }, [project.name === '']);
-  if (project.name !== '') {
-    return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(_components_ProjectItem_ProjectItem__WEBPACK_IMPORTED_MODULE_0__["default"], {
-      project: project
-    }));
-  }
-}
-
-/***/ }),
-
 /***/ "./src/pages/ProjectsPage/ProjectsPage.js":
 /*!************************************************!*\
   !*** ./src/pages/ProjectsPage/ProjectsPage.js ***!
@@ -852,8 +769,6 @@ const AppRouter = () => {
 /* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
 /* harmony import */ var _pages_ProjectsPage_ProjectsPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/ProjectsPage/ProjectsPage */ "./src/pages/ProjectsPage/ProjectsPage.js");
 /* harmony import */ var _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
-/* harmony import */ var _pages_ProjectShowPage_ProjectShowPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/ProjectShowPage/ProjectShowPage */ "./src/pages/ProjectShowPage/ProjectShowPage.js");
-
 
 
 
@@ -874,10 +789,6 @@ const routes = [{
   Component: _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_3__["default"],
   key: 'Contact',
   path: '/contact'
-}, {
-  Component: _pages_ProjectShowPage_ProjectShowPage__WEBPACK_IMPORTED_MODULE_4__["default"],
-  key: 'Project',
-  path: '/projects/:id'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -918,9 +829,9 @@ async function createContact(data) {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   indexProjects: () => (/* binding */ indexProjects),
-/* harmony export */   showProject: () => (/* binding */ showProject)
+/* harmony export */   indexProjects: () => (/* binding */ indexProjects)
 /* harmony export */ });
+/* unused harmony export showProject */
 const BASE_URL = '/api/projects';
 async function indexProjects() {
   try {
@@ -999,7 +910,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes cHTjXpCQRt3P5Ps9uofS {
   ._oETPRO9bgRtAEaJt69J {
     font-size: 3vw !important;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAEA;EAEI,YAAA;EACA,kBAAA;AADJ;AAII;EACI,eAAA;EACA,iBAAA;EACA,YAAA;EACA,8BAAA;EACA,yCAAA;AAFR;AAII;EACI,UAAA;AAFR;;AAMA;EACI;IACI,4BAAA;EAHN;AACF;AAMA;EACI;IACI,yBAAA;EAJN;AACF","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    \n    height: 8rem;\n    text-align: center;\n \n\n    .displayFade {\n        font-size: 2rem;\n        font-weight: bold;\n        color: white;\n        text-shadow: 2px 2px 2px black;\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: .0\n    }\n}\n\n@media screen and (width < 40rem) {\n    .displayFade {\n        font-size: 1.5rem !important;\n    }\n}\n\n@media screen and (width > 70rem) {\n    .displayFade {\n        font-size: 3vw !important;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/AttributesList/AttributesList.module.scss"],"names":[],"mappings":"AAAA;EACI;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;EACE;IACI,UAAA;EACN;AACF;AAEA;EACI,YAAA;EACA,kBAAA;AAAJ;AAEI;EACI,eAAA;EACA,iBAAA;EACA,YAAA;EACA,8BAAA;EACA,yCAAA;AAAR;AAEI;EACI,UAAA;AAAR;;AAIA;EACI;IACI,4BAAA;EADN;AACF;AAIA;EACI;IACI,yBAAA;EAFN;AACF","sourcesContent":["@keyframes fadeInAndOut {\n    0% {\n        opacity: 0\n    }\n    20% {\n        opacity: 1\n    }\n    80% {\n        opacity: 1\n    }\n    100% {\n        opacity: 0\n    }\n}\n\n.attributesList {\n    height: 8rem;\n    text-align: center;\n \n    .displayFade {\n        font-size: 2rem;\n        font-weight: bold;\n        color: white;\n        text-shadow: 2px 2px 2px black;\n        animation: fadeInAndOut 5s linear\n    }\n    .null {\n        opacity: .0\n    }\n}\n\n@media screen and (width < 40rem) {\n    .displayFade {\n        font-size: 1.5rem !important;\n    }\n}\n\n@media screen and (width > 70rem) {\n    .displayFade {\n        font-size: 3vw !important;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"attributesList": `cpBhSBxa_1hjqWyjxJVH`,
@@ -1075,7 +986,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.rXtzMJoGkU1rsQf4DiH2 {
   background-color: darkblue;
   border: 2px solid lightgray;
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/components/ContactForm/ContactForm.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAJ;AAEI;EACI,uCAAA;EACA,oBAAA;EACA,wCAAA;AAAR;AAGI;EACI,4BAAA;EACA,mBAAA;EACA,0BAAA;EACA,aAAA;EACA,gCAAA;AADR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AADZ;AAGY;EACI,kBAAA;EACA,0BAAA;EACA,uCAAA;EACA,mCAAA;AADhB;AAKY;EACI,gCAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,kBAAA;EACA,mCAAA;EACA,YAAA;AAHhB;AAKY;EACI,YAAA;EACA,0BAAA;EACA,2BAAA;EACA,eAAA;AAHhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.ContactForm {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 3rem;\n\n    .formHeader {\n        font-family: \"Courier Prime\", monospace;\n        font-weight: lighter;\n        font-size: clamp(1.25rem, 2.5vw, 2.5rem);\n    }\n\n    .formContainer {\n        background-color: whitesmoke;\n        border-radius: 10px;\n        border: 2px solid darkblue;\n        padding: 2rem;\n        box-shadow: 2px 2px 2px darkblue;\n\n        .contactForm {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            gap: 2rem;\n\n            .formInput {\n                border-radius: 5px;\n                border: 2px solid darkblue;\n                font-family: 'Courier Prime', monospace;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                \n            }\n\n            .formSubmit {\n                font-family: \"Montserrat\", serif;\n                font-weight: bolder;\n                background-color: lightgray;\n                border: 2px solid darkblue;\n                border-radius: 5px;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                width: 10rem;\n            }\n            .formSubmit:hover {\n                color: white;\n                background-color: darkblue;\n                border: 2px solid lightgray;\n                cursor: pointer;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ContactForm/ContactForm.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAJ;AAEI;EACI,uCAAA;EACA,oBAAA;EACA,wCAAA;AAAR;AAGI;EACI,4BAAA;EACA,mBAAA;EACA,0BAAA;EACA,aAAA;EACA,gCAAA;AADR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,SAAA;AADZ;AAGY;EACI,kBAAA;EACA,0BAAA;EACA,uCAAA;EACA,mCAAA;AADhB;AAIY;EACI,gCAAA;EACA,mBAAA;EACA,2BAAA;EACA,0BAAA;EACA,kBAAA;EACA,mCAAA;EACA,YAAA;AAFhB;AAKY;EACI,YAAA;EACA,0BAAA;EACA,2BAAA;EACA,eAAA;AAHhB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.ContactForm {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 3rem;\n\n    .formHeader {\n        font-family: \"Courier Prime\", monospace;\n        font-weight: lighter;\n        font-size: clamp(1.25rem, 2.5vw, 2.5rem);\n    }\n\n    .formContainer {\n        background-color: whitesmoke;\n        border-radius: 10px;\n        border: 2px solid darkblue;\n        padding: 2rem;\n        box-shadow: 2px 2px 2px darkblue;\n\n        .contactForm {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            gap: 2rem;\n\n            .formInput {\n                border-radius: 5px;\n                border: 2px solid darkblue;\n                font-family: 'Courier Prime', monospace;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n            }\n\n            .formSubmit {\n                font-family: \"Montserrat\", serif;\n                font-weight: bolder;\n                background-color: lightgray;\n                border: 2px solid darkblue;\n                border-radius: 5px;\n                font-size: clamp(1rem, 2vw, 1.5rem);\n                width: 10rem;\n            }\n            \n            .formSubmit:hover {\n                color: white;\n                background-color: darkblue;\n                border: 2px solid lightgray;\n                cursor: pointer;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ContactForm": `rXtzMJoGkU1rsQf4DiH2`,
@@ -1151,7 +1062,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QpVD3qAS0nYBtoQqAYoe {
   .mW8_jbYVqUl59UscNYFa {
     display: none;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAGA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;EACA,aAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;AAKI;EACI,eAAA;EACA,WAAA;EACA,MAAA;EACA,aAAA;EACA,kCAAA;EACA,kBAAA;AAHR;;AAOA;EACI;IACI,aAAA;EAJN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n    z-index: 1000;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        .navLink:hover {\n            color: white;\n        }\n\n    }\n\n    .signature {\n        position: fixed;\n        right: 3rem;\n        top: 0;\n        margin-top: 0;\n        font-family: \"MonteCarlo\", cursive;\n        font-size: 1.25rem;\n    }\n}\n\n@media screen and (width < 35rem) {\n    .signature {\n        display: none;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAGA;EACI,2BAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,MAAA;EACA,OAAA;EACA,iCAAA;EACA,8BAAA;EACA,aAAA;AAAJ;AAEI;EACA,aAAA;EACA,2BAAA;EACA,mBAAA;EACA,QAAA;EACA,YAAA;EACA,WAAA;EACA,iBAAA;AAAJ;AAEQ;EACI,mCAAA;EACA,qBAAA;EACA,YAAA;AAAZ;AAGQ;EACI,YAAA;AADZ;AAKI;EACI,eAAA;EACA,WAAA;EACA,MAAA;EACA,aAAA;EACA,kCAAA;EACA,kBAAA;AAHR;;AAOA;EACI;IACI,aAAA;EAJN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');\n\n.NavBar {\n    background-color: lightgrey;\n    width: 100vw;\n    height: 2rem;\n    position: fixed;\n    top: 0;\n    left: 0;\n    font-family: 'Roboto Slab', serif;\n    border-bottom: 1px solid black;\n    z-index: 1000;\n\n    .linkContainer {\n    display: flex;\n    justify-content: flex-start;\n    align-items: center;\n    gap: 5vw;\n    height: 100%;\n    width: 100%;\n    margin-left: 5rem;\n\n        .navLink {\n            font-size: clamp(1rem, 2vw, 1.5rem);\n            text-decoration: none;\n            color: black;\n        }\n        \n        .navLink:hover {\n            color: white;\n        }\n    }\n\n    .signature {\n        position: fixed;\n        right: 3rem;\n        top: 0;\n        margin-top: 0;\n        font-family: \"MonteCarlo\", cursive;\n        font-size: 1.25rem;\n    }\n}\n\n@media screen and (width < 35rem) {\n    .signature {\n        display: none;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavBar": `QpVD3qAS0nYBtoQqAYoe`,
@@ -1229,7 +1140,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Bb3ND5DsBlpFzlNbzVHu {
   .gqx_VKknoy57wOzb7JcS {
     position: static !important;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;EACA,aAAA;AACJ;AACI;EACI,kBAAA;EACA,UAAA;EACA,SAAA;AACR;AAEI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AAAR;AAEQ;EACI,eAAA;EACA,kBAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;;AAKA;EACI;IACI,SAAA;EAFN;EAKE;IACI,2BAAA;EAHN;AACF;AAMA;EACI;IACI,SAAA;EAJN;EAME;IACI,2BAAA;EAJN;AACF","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100%;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n    z-index: 1000;\n\n    .Copyright {\n        position: absolute;\n        left: 1rem;\n        bottom: 0;\n    }\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n@media screen and (width < 45rem) and (width > 25rem) {\n    .NavFooter {\n        gap: 5rem;\n    }\n\n    .Copyright {\n        position: static !important;\n    }\n}\n\n@media screen and (width <= 25rem) {\n    .NavFooter {\n        gap: 3rem;\n    }\n    .Copyright {\n        position: static !important;\n    }\n}\n\n\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavFooter/NavFooter.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,2BAAA;EACA,eAAA;EACA,SAAA;EACA,OAAA;EACA,WAAA;EACA,2BAAA;EACA,aAAA;AACJ;AACI;EACI,kBAAA;EACA,UAAA;EACA,SAAA;AACR;AAEI;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;AAAR;AAEQ;EACI,eAAA;EACA,kBAAA;AAAZ;AAEQ;EACI,YAAA;AAAZ;;AAKA;EACI;IACI,SAAA;EAFN;EAIE;IACI,2BAAA;EAFN;AACF;AAKA;EACI;IACI,SAAA;EAHN;EAKE;IACI,2BAAA;EAHN;AACF","sourcesContent":[".NavFooter {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 3rem;\n    width: 100%;\n    background-color: lightgrey;\n    position: fixed;\n    bottom: 0;\n    left: 0;\n    gap: 7.5rem;\n    border-top: 1px solid black;\n    z-index: 1000;\n\n    .Copyright {\n        position: absolute;\n        left: 1rem;\n        bottom: 0;\n    }\n\n    .footerLink {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    \n        .footerIcon {\n            height: 2.75rem; \n            position: absolute;\n        }\n        .footerIcon:hover {\n            height: 3rem;\n        }\n    }\n}\n\n@media screen and (width < 45rem) and (width > 25rem) {\n    .NavFooter {\n        gap: 5rem;\n    }\n    .Copyright {\n        position: static !important;\n    }\n}\n\n@media screen and (width <= 25rem) {\n    .NavFooter {\n        gap: 3rem;\n    }\n    .Copyright {\n        position: static !important;\n    }\n}\n\n\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NavFooter": `Bb3ND5DsBlpFzlNbzVHu`,
@@ -1237,32 +1148,6 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"footerLink": `rc6OcOz_ssuzPFYDVHuK`,
 	"footerIcon": `OCIWcgbb2IohLipUQV1I`
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ProjectItem/ProjectItem.module.scss":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ProjectItem/ProjectItem.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
-// Exports
-___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -1340,7 +1225,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
 .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .OG_58bK6KgGnHwZ5RqwY:hover {
   cursor: pointer;
 }
-.JHKOwgw57XWKRmWEcOoS .p5GA4VhZeJoeeSNsdLnJ {
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .p5GA4VhZeJoeeSNsdLnJ {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1352,7 +1237,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
   z-index: 800;
   cursor: pointer;
 }
-.JHKOwgw57XWKRmWEcOoS .tkRmNQSyjZW3ZOoyTLwl {
+.JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .tkRmNQSyjZW3ZOoyTLwl {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -1395,12 +1280,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.JHKOwgw57XWKRmWEcOoS {
   .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .OG_58bK6KgGnHwZ5RqwY {
     width: 25rem;
   }
-  .JHKOwgw57XWKRmWEcOoS .p5GA4VhZeJoeeSNsdLnJ {
+  .JHKOwgw57XWKRmWEcOoS .vR5nBBaIVoqpGEr4TnRN .p5GA4VhZeJoeeSNsdLnJ {
     font-size: 0.9rem;
     width: 22rem;
     bottom: 20rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;EACA,kBAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;EACA,YAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,6BAAA;AAFZ;AAMQ;EACI,YAAA;EACA,mBAAA;EACA,6BAAA;EACA,UAAA;AAJZ;AAOQ;EACI,6BAAA;EACA,YAAA;EACA,eAAA;AALZ;AAQQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,YAAA;AANZ;AASQ;EACI,eAAA;AAPZ;AAWI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;AATR;AAYI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;AAVR;;AAcA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EAXN;EAaM;IACI,WAAA;IACA,aAAA;IACA,cAAA;EAXV;EAaU;IACI,iBAAA;IACA,kBAAA;IACA,iBAAA;EAXd;EAcU;IACI,eAAA;IACA,oBAAA;IACA,mBAAA;IACA,YAAA;EAZd;EAeU;IACI,eAAA;EAbd;EAgBU;IACI,YAAA;EAdd;EAiBU;IACI,YAAA;EAfd;EAmBM;IACI,iBAAA;IACA,YAAA;IACA,aAAA;EAjBV;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 90vw;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n            text-align: center;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n            width: 40rem;\n        }\n\n        .projectLinks {\n            font-size: 1.5rem;\n        }\n\n        .link:hover {\n            color: white;\n            text-shadow: 1px 1px 1px blue;\n\n        }\n\n        .projectImageVisible {\n            width: 40rem;\n            border-radius: 10px;\n            box-shadow: 2px 2px 1px black;\n            opacity: 1;\n        }\n\n        .projectImageVisible:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n            cursor: pointer;\n        }\n\n        .projectImageInvisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: .1;\n        }\n\n        .projectImageInvisible:hover {\n            cursor: pointer;\n        }\n    }\n\n    .projectPopupVisible {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        font-weight: bold;\n        z-index:800; \n        cursor: pointer;\n    }\n\n    .projectPopupInvisible {\n        display: none;\n        flex-direction: column;\n        align-items: center;\n        position: relative;\n        bottom: 28rem;\n        width: 38rem;\n        font-size: 1.25rem;\n        z-index: 20000;\n    }\n}\n\n@media screen and (width < 55rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 90vw;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n                margin-right: 2rem;\n                margin-left: 2rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n                margin-right: 2.5rem;\n                margin-left: 2.5rem;\n                width: 22rem;\n            }\n\n            .projectLinks {\n                font-size: 1rem;\n            }\n\n            .projectImageVisible {\n                width: 25rem;\n            }\n\n            .projectImageInvisible {\n                width: 25rem;\n            }\n        }\n\n        .projectPopupVisible {\n            font-size: .9rem;\n            width: 22rem;\n            bottom: 20rem;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectList/ProjectList.module.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EACA,mBAAA;EACA,WAAA;AACJ;AACI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,cAAA;EACA,4BAAA;AACR;AACQ;EACI,eAAA;EACA,eAAA;EACA,kBAAA;AACZ;AAEQ;EACI,iBAAA;EACA,kBAAA;EACA,YAAA;AAAZ;AAGQ;EACI,iBAAA;AADZ;AAIQ;EACI,YAAA;EACA,6BAAA;AAFZ;AAMQ;EACI,YAAA;EACA,mBAAA;EACA,6BAAA;EACA,UAAA;AAJZ;AAOQ;EACI,6BAAA;EACA,YAAA;EACA,eAAA;AALZ;AAQQ;EACI,YAAA;EACA,iBAAA;EACA,6BAAA;EACA,YAAA;AANZ;AASQ;EACI,eAAA;AAPZ;AAUQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,iBAAA;EACA,YAAA;EACA,eAAA;AARZ;AAWQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;AATZ;;AAcA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,SAAA;EAXN;EAaM;IACI,WAAA;IACA,aAAA;IACA,cAAA;EAXV;EAaU;IACI,iBAAA;IACA,kBAAA;IACA,iBAAA;EAXd;EAcU;IACI,eAAA;IACA,oBAAA;IACA,mBAAA;IACA,YAAA;EAZd;EAeU;IACI,eAAA;EAbd;EAgBU;IACI,YAAA;EAdd;EAiBU;IACI,YAAA;EAfd;EAkBU;IACI,iBAAA;IACA,YAAA;IACA,aAAA;EAhBd;AACF","sourcesContent":[".ProjectList {\n    margin-bottom: 3rem;\n    display: flex;\n    flex-direction: column;\n    gap: 2rem;\n    align-items: center;\n    width: 95vw;\n    \n    .projectContainer {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        width: 90vw;\n        height: 40rem;\n        margin: 0 2rem;\n        border-top: 4px dotted white;\n\n        .projectName {\n            font-size: 2rem;\n            height: 1.75rem;\n            text-align: center;\n        }\n\n        .projectSummary {\n            font-size: 1.5rem;\n            text-align: center;\n            width: 40rem;\n        }\n\n        .projectLinks {\n            font-size: 1.5rem;\n        }\n\n        .link:hover {\n            color: white;\n            text-shadow: 1px 1px 1px blue;\n\n        }\n\n        .projectImageVisible {\n            width: 40rem;\n            border-radius: 10px;\n            box-shadow: 2px 2px 1px black;\n            opacity: 1;\n        }\n\n        .projectImageVisible:hover {\n            box-shadow: 2px 2px 1px white;\n            opacity: .8;\n            cursor: pointer;\n        }\n\n        .projectImageInvisible {\n            width: 40rem;\n            border-radius: 5%;\n            box-shadow: 2px 2px 1px black;\n            opacity: .1;\n        }\n\n        .projectImageInvisible:hover {\n            cursor: pointer;\n        }\n\n        .projectPopupVisible {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            position: relative;\n            bottom: 28rem;\n            width: 38rem;\n            font-size: 1.25rem;\n            font-weight: bold;\n            z-index:800; \n            cursor: pointer;\n        }\n\n        .projectPopupInvisible {\n            display: none;\n            flex-direction: column;\n            align-items: center;\n            position: relative;\n            bottom: 28rem;\n            width: 38rem;\n            font-size: 1.25rem;\n            z-index: 20000;\n        }\n    }\n}\n\n@media screen and (width < 55rem) {\n    .ProjectList {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        gap: 1rem;\n\n        .projectContainer {\n            width: 90vw;\n            height: 27rem;\n            margin: 0 2rem;\n\n            .projectName {\n                font-size: 1.5rem;\n                margin-right: 2rem;\n                margin-left: 2rem;\n            }\n\n            .projectSummary {\n                font-size: 1rem;\n                margin-right: 2.5rem;\n                margin-left: 2.5rem;\n                width: 22rem;\n            }\n\n            .projectLinks {\n                font-size: 1rem;\n            }\n\n            .projectImageVisible {\n                width: 25rem;\n            }\n\n            .projectImageInvisible {\n                width: 25rem;\n            }\n\n            .projectPopupVisible {\n                font-size: .9rem;\n                width: 22rem;\n                bottom: 20rem;\n            }\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectList": `JHKOwgw57XWKRmWEcOoS`,
@@ -1466,10 +1351,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
   background-color: lightgrey;
   padding: 2px 1px;
 }
-.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .ww96wplc3iiswNHki006 {
+.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .jLKAruXAQvpHs1rYOKQx .ww96wplc3iiswNHki006 {
   max-width: 3rem;
 }
-.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .UTEmCPet931KAoQhyEWd {
+.TgdELLR1YDwmFP4lxegJ .s6wolvpV50cfcaoAIN0U .jLKAruXAQvpHs1rYOKQx .UTEmCPet931KAoQhyEWd {
   font-weight: bolder;
 }
 
@@ -1503,7 +1388,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.TgdELLR1YDwmFP4lxegJ {
     width: 8rem;
     font-size: 12px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;EACA,gBAAA;AACZ;AAEY;EACI,eAAA;AAAhB;AAGY;EACI,mBAAA;AADhB;;AAMA;EACI;IACI,WAAA;EAHN;EAKM;IACI,WAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EAHf;EAKU;IACI,WAAA;IACA,eAAA;EAHd;AACF;AAQA;EACI;IACI,WAAA;EANN;EAQM;IACI,WAAA;IACA,8BAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EANf;EAQU;IACI,WAAA;IACA,eAAA;EANd;AACF","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n            padding: 2px 1px;\n        }\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            grid-template-columns: 1fr 1fr;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SkillList/SkillList.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mEAAA;EACA,kBAAA;EACA,mBAAA;EACA,iCAAA;EACA,mBAAA;AACJ;AACI;EACI,gBAAA;EACA,aAAA;EACA,kCAAA;EACA,aAAA;EACA,qBAAA;EACK,gBAAA;EACL,mBAAA;EACA,UAAA;AACR;AACQ;EACI,6BAAA;EACA,kBAAA;EACA,aAAA;EACA,QAAA;EACA,WAAA;EACA,2BAAA;EACA,gBAAA;AACZ;AACY;EACI,eAAA;AAChB;AAEY;EACI,mBAAA;AAAhB;;AAMA;EACI;IACI,WAAA;EAHN;EAKM;IACI,WAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EAHf;EAKU;IACI,WAAA;IACA,eAAA;EAHd;AACF;AAQA;EACI;IACI,WAAA;EANN;EAQM;IACI,WAAA;IACA,8BAAA;IACA,aAAA;IACA,qBAAA;IACK,gBAAA;EANf;EAQU;IACI,WAAA;IACA,eAAA;EANd;AACF","sourcesContent":[".skillListContainer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n    padding: 1rem 2rem;\n    border-radius: 10px;\n    box-shadow: 2px 2px 2px 2px black;\n    margin-bottom: 5rem;\n    \n    .skillList {\n        list-style: none;\n        display: grid;\n        grid-template-columns: 1fr 1fr 1fr;\n        row-gap: 2rem;\n        -moz-column-gap: 2rem;\n             column-gap: 2rem;\n        place-items: center;\n        padding: 0;\n\n        .skillItem {\n            box-shadow: 1px 1px 1px black;\n            border-radius: 5px;\n            display: flex;\n            gap: 5px;\n            width: 9rem;\n            background-color: lightgrey;\n            padding: 2px 1px;\n\n            .icon {\n                max-width: 3rem;\n            }\n\n            .skillName {\n                font-weight: bolder;\n            }\n        }\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .skillListContainer {\n        width: 90vw;\n\n        .skillList {\n            width: 90vw;\n            grid-template-columns: 1fr 1fr;\n            row-gap: 1rem;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n\n            .skillItem {\n                width: 8rem;\n                font-size: 12px;\n            }\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"skillListContainer": `TgdELLR1YDwmFP4lxegJ`,
@@ -1626,7 +1511,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   .maYgZBbSPNX4mu9_CsqA {
     margin-left: 2rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAGI;EACI,mBAAA;AADR;AAII;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,SAAA;AAFR;AAII;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AAFR;AAIQ;EACI,iBAAA;EACA,kBAAA;AAFZ;AAMI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAJR;AAMQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;AAJZ;AAMY;EACI,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,mCAAA;AAJhB;AAQY;EACI,kBAAA;AANhB;AAWQ;EAEI,aAAA;EACA,sBAAA;EACA,mBAAA;AAVZ;AAYY;EACI,oCAAA;EACA,yCAAA;EACA,8BAAA;EACA,kBAAA;EACA,kBAAA;AAVhB;AAaY;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;AAXhB;AAagB;EACI,oCAAA;EACA,gBAAA;AAXpB;AAcgB;EACI,kBAAA;AAZpB;AAcoB;EACI,oCAAA;EACA,mBAAA;AAZxB;;AAqBA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;EAlBN;EAoBE;IACI,iBAAA;EAlBN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n\n    .aboutHeadline {\n        font-weight: normal;\n    }\n\n    .mainContent {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin-left: 3rem;\n        margin-right: 3rem;\n        gap: 2rem;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 50vw;\n        margin-left: 2rem;\n        margin-right: 2rem;\n\n        .aboutResumeLink {\n            font-weight: bold;\n            text-align: center;\n        }\n    }\n\n    .aboutPageTop {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 3rem;\n        border-bottom: 4px dotted white;\n\n        .picAndCap {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-left: 2rem;\n\n            .aboutImage {\n                width: 25vw;\n                min-width: 17rem;\n                border-radius: 70px;\n                box-shadow: 5px 5px 5px 5px skyblue;\n           \n            }\n        }\n            .aboutCaption {\n                font-style: italic;\n\n            }\n        }\n\n        .aboutQuoteAndStrengths {\n\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n\n            .aboutQuote {\n                font-size: clamp(1.25rem, 2vw, 2rem);\n                font-family: \"Gloria Hallelujah\", cursive;\n                text-shadow: 2px 2px 2px white;\n                margin-right: 2rem;\n                text-align: center;\n            }\n\n            .aboutStrengths {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                margin-right: 2rem;\n\n                .strengthsHeader {\n                    font-size: clamp(1.25rem, 2vw, 2rem);\n                    margin-bottom: 0;\n                }\n\n                .aboutStrengthsList {\n                    list-style: circle;\n\n                    .listItem {\n                        font-size: clamp(1.25rem, 2vw, 2rem);\n                        margin-bottom: 1rem;\n                    }\n                }\n            }\n        }\n    }\n    \n}\n\n@media screen and (width < 40rem) {\n    .aboutPageTop {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n    }\n    .aboutQuote {\n        margin-left: 2rem;\n\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;AAAJ;AAEI;EACI,mBAAA;AAAR;AAGI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,SAAA;AADR;AAGI;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AADR;AAGQ;EACI,iBAAA;EACA,kBAAA;AADZ;AAKI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAHR;AAKQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,iBAAA;AAHZ;AAKY;EACI,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,mCAAA;AAHhB;AAMY;EACI,kBAAA;AAJhB;AASQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AAPZ;AASY;EACI,oCAAA;EACA,yCAAA;EACA,8BAAA;EACA,kBAAA;EACA,kBAAA;AAPhB;AAUY;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;AARhB;AAUgB;EACI,oCAAA;EACA,gBAAA;AARpB;AAWgB;EACI,kBAAA;AATpB;AAWoB;EACI,oCAAA;EACA,mBAAA;AATxB;;AAiBA;EACI;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;EAdN;EAgBE;IACI,iBAAA;EAdN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');\n\n.AboutPage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n\n    .aboutHeadline {\n        font-weight: normal;\n    }\n\n    .mainContent {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin-left: 3rem;\n        margin-right: 3rem;\n        gap: 2rem;\n\n    .aboutSummary {\n        margin-bottom: 3rem;\n        width: 50vw;\n        margin-left: 2rem;\n        margin-right: 2rem;\n\n        .aboutResumeLink {\n            font-weight: bold;\n            text-align: center;\n        }\n    }\n\n    .aboutPageTop {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 3rem;\n        border-bottom: 4px dotted white;\n\n        .picAndCap {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            margin-left: 2rem;\n\n            .aboutImage {\n                width: 25vw;\n                min-width: 17rem;\n                border-radius: 70px;\n                box-shadow: 5px 5px 5px 5px skyblue;\n            }\n        }\n            .aboutCaption {\n                font-style: italic;\n\n            }\n        }\n\n        .aboutQuoteAndStrengths {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n\n            .aboutQuote {\n                font-size: clamp(1.25rem, 2vw, 2rem);\n                font-family: \"Gloria Hallelujah\", cursive;\n                text-shadow: 2px 2px 2px white;\n                margin-right: 2rem;\n                text-align: center;\n            }\n\n            .aboutStrengths {\n                display: flex;\n                flex-direction: column;\n                align-items: center;\n                margin-right: 2rem;\n\n                .strengthsHeader {\n                    font-size: clamp(1.25rem, 2vw, 2rem);\n                    margin-bottom: 0;\n                }\n\n                .aboutStrengthsList {\n                    list-style: circle;\n\n                    .listItem {\n                        font-size: clamp(1.25rem, 2vw, 2rem);\n                        margin-bottom: 1rem;\n                    }\n                }\n            }\n        }\n    }\n}\n\n@media screen and (width < 40rem) {\n    .aboutPageTop {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n    }\n    .aboutQuote {\n        margin-left: 2rem;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutPage": `lkSfnDUQxn7c_fywXKpE`,
@@ -1850,7 +1735,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   footerNod {
     font-size: 1rem !important;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;EACA,iBAAA;AAAZ;AAEY;EACI,kBAAA;AAAhB;AAGY;EACI,kBAAA;AADhB;AAIY;EACI,kBAAA;AAFhB;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,kCAAA;EACA,mEAAA;AAJZ;AAWI;EACI,iBAAA;EACA,kBAAA;EACA,kBAAA;AATR;AAYI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAVR;AAYQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AAVZ;AAYY;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,mEAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;EACA,oBAAA;AAVhB;AAYgB;EACI,YAAA;EACA,qBAAA;EACA,qBAAA;EACA,aAAA;AAVpB;;AAiBA;EACI;IACI,yBAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,yBAAA;EAdN;AACF;AAiBA;EACI;IACI,iBAAA;EAfN;EAiBE;IACI,kBAAA;EAfN;EAiBE;IACI,eAAA;EAfN;EAiBE;IACI,oBAAA;EAfN;EAmBU;IACI,0BAAA;EAjBd;EAqBE;IACI,0BAAA;EAnBN;AACF;AAsBA;EACI;IACI,MAAA;EApBN;EAwBU;IACI,kBAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EA0BE;IACI,oBAAA;EAxBN;EA4BU;IACI,0BAAA;EA1Bd;EA8BE;IACI,0BAAA;EA5BN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 2rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            width: 40vw;\n            margin-left: 2rem;\n\n            .homeName {\n                text-align: center;\n            }\n\n            .homeTitle {\n                text-align: center;\n            }\n\n            .homeDescription {\n                text-align: center;\n            }\n        }\n\n        .profileImage {\n            height: 40vw;\n            min-height: 15rem;\n            margin: 2rem;\n            border-radius: 50%;\n            box-shadow: 2px 2px 10px 2px black;\n            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n            \n            \n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n        font-size: 1.25rem;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n            align-content: flex-start;\n            padding: 0;\n\n            .homeListItem {\n                margin-bottom: 2rem;\n                width: 35vw;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                justify-self: center;\n                display: flex;\n                align-items: stretch;\n\n                .listItemLink {\n                    color: black;\n                    text-decoration: none;\n                    display: inline-block;\n                    padding: 1rem;\n                }\n            }\n        }\n    }\n}\n\n@media screen and (width > 70rem) {\n    .homeName {\n        font-size: 3vw !important\n    }\n    .homeTitle {\n        font-size: 2.5vw !important\n    }\n    .homeDescription {\n        font-size: 2.5vw !important\n    }\n    .footerNod {\n        font-size: 2vw !important\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .homeName {\n        font-size: 1.5rem;\n    }\n    .homeTitle {\n        font-size: 1.25rem;\n    }\n    .homeDescription {\n        font-size: 1rem;\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    .footerNod {\n        font-size: 1rem !important;\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .topLeftAndImage {\n        gap: 0;\n\n        .topLeftMaterial {\n\n            .homeName {\n                font-size: 1.25rem;\n            }\n            .homeTitle {\n                font-size: 1rem;\n            }\n            .homeDescription {\n                font-size: 1rem;\n            }\n        }\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    footerNod {\n        font-size: 1rem !important;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;EACA,iBAAA;AAAZ;AAEY;EACI,kBAAA;AAAhB;AAGY;EACI,kBAAA;AADhB;AAIY;EACI,kBAAA;AAFhB;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,kCAAA;EACA,mEAAA;AAJZ;AAQI;EACI,iBAAA;EACA,kBAAA;EACA,kBAAA;AANR;AASI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAPR;AASQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AAPZ;AASY;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,mEAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;EACA,oBAAA;AAPhB;AASgB;EACI,YAAA;EACA,qBAAA;EACA,qBAAA;EACA,aAAA;AAPpB;;AAcA;EACI;IACI,yBAAA;EAXN;EAaE;IACI,2BAAA;EAXN;EAaE;IACI,2BAAA;EAXN;EAaE;IACI,yBAAA;EAXN;AACF;AAcA;EACI;IACI,iBAAA;EAZN;EAcE;IACI,kBAAA;EAZN;EAcE;IACI,eAAA;EAZN;EAcE;IACI,oBAAA;EAZN;EAeU;IACI,0BAAA;EAbd;EAiBE;IACI,0BAAA;EAfN;AACF;AAkBA;EACI;IACI,MAAA;EAhBN;EAmBU;IACI,kBAAA;EAjBd;EAmBU;IACI,eAAA;EAjBd;EAmBU;IACI,eAAA;EAjBd;EAqBE;IACI,oBAAA;EAnBN;EAqBU;IACI,0BAAA;EAnBd;EAuBE;IACI,0BAAA;EArBN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 2rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            width: 40vw;\n            margin-left: 2rem;\n\n            .homeName {\n                text-align: center;\n            }\n\n            .homeTitle {\n                text-align: center;\n            }\n\n            .homeDescription {\n                text-align: center;\n            }\n        }\n\n        .profileImage {\n            height: 40vw;\n            min-height: 15rem;\n            margin: 2rem;\n            border-radius: 50%;\n            box-shadow: 2px 2px 10px 2px black;\n            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n        }\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n        font-size: 1.25rem;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 1rem;\n                 column-gap: 1rem;\n            align-content: flex-start;\n            padding: 0;\n\n            .homeListItem {\n                margin-bottom: 2rem;\n                width: 35vw;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                justify-self: center;\n                display: flex;\n                align-items: stretch;\n\n                .listItemLink {\n                    color: black;\n                    text-decoration: none;\n                    display: inline-block;\n                    padding: 1rem;\n                }\n            }\n        }\n    }\n}\n\n@media screen and (width > 70rem) {\n    .homeName {\n        font-size: 3vw !important\n    }\n    .homeTitle {\n        font-size: 2.5vw !important\n    }\n    .homeDescription {\n        font-size: 2.5vw !important\n    }\n    .footerNod {\n        font-size: 2vw !important\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .homeName {\n        font-size: 1.5rem;\n    }\n    .homeTitle {\n        font-size: 1.25rem;\n    }\n    .homeDescription {\n        font-size: 1rem;\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    .footerNod {\n        font-size: 1rem !important;\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .topLeftAndImage {\n        gap: 0;\n        .topLeftMaterial {\n\n            .homeName {\n                font-size: 1.25rem;\n            }\n            .homeTitle {\n                font-size: 1rem;\n            }\n            .homeDescription {\n                font-size: 1rem;\n            }\n        }\n    }\n    .experienceLists {\n        gap: 2rem !important;\n        .homeList {\n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    footerNod {\n        font-size: 1rem !important;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
@@ -1866,32 +1751,6 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"homeListItem": `eLxNMbsTFENT7X9xuYCQ`,
 	"listItemLink": `u2xsV1IYg9PNTOr9C0dI`
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/ProjectShowPage/ProjectShowPage.module.scss":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/ProjectShowPage/ProjectShowPage.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
-// Exports
-___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -2198,56 +2057,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/components/ProjectItem/ProjectItem.module.scss":
-/*!************************************************************!*\
-  !*** ./src/components/ProjectItem/ProjectItem.module.scss ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./ProjectItem.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ProjectItem/ProjectItem.module.scss");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectItem_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
 /***/ "./src/components/ProjectList/ProjectList.module.scss":
 /*!************************************************************!*\
   !*** ./src/components/ProjectList/ProjectList.module.scss ***!
@@ -2509,56 +2318,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_HomePage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/pages/ProjectShowPage/ProjectShowPage.module.scss":
-/*!***************************************************************!*\
-  !*** ./src/pages/ProjectShowPage/ProjectShowPage.module.scss ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./ProjectShowPage.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/ProjectShowPage/ProjectShowPage.module.scss");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ProjectShowPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -2881,4 +2640,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.e9421968597bae9f39a310df254f38d5.js.map
+//# sourceMappingURL=App.e834dfdff2572426835ae5c70738f3eb.js.map

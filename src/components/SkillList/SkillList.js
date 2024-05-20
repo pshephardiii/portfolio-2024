@@ -13,8 +13,8 @@ export default function SkillList(){
                 <li className={styles.skillItem}><img src={skillsIcons[1]} className={styles.icon} title={skills[1]}></img><p className={styles.skillName}>HTML5</p></li>
                 <li className={styles.skillItem}><img src={skillsIcons[2]} className={styles.icon} title={skills[2]}></img><p className={styles.skillName}>CSS</p></li>
                 <li className={styles.skillItem}><img src={skillsIcons[3]} className={styles.icon} title={skills[3]}></img><p className={styles.skillName}>MongoDB</p></li>
-                <li className={styles.skillItem}><img src={skillsIcons[4]} className={styles.icon} title={skills[4]}></img> <p className={styles.skillName}>JSON</p></li>
-                <li className={styles.skillItem}><img src={skillsIcons[5]} className={styles.icon} title={skills[5]}></img> <p className={styles.skillName}>React</p></li>
+                <li className={styles.skillItem}><img src={skillsIcons[4]} className={styles.icon} title={skills[4]}></img><p className={styles.skillName}>JSON</p></li>
+                <li className={styles.skillItem}><img src={skillsIcons[5]} className={styles.icon} title={skills[5]}></img><p className={styles.skillName}>React</p></li>
                 <li className={styles.skillItem}><img src={skillsIcons[6]} className={styles.icon} title={skills[6]}></img><p className={styles.skillName}>Express.js</p></li>
                 <li className={styles.skillItem}><img src={skillsIcons[7]} className={styles.icon} title={skills[7]}></img><p className={styles.skillName}>JSX</p></li>
                 <li className={styles.skillItem}><img src={skillsIcons[8]} className={styles.icon} title={skills[8]}></img><p className={styles.skillName}>Sass</p></li>

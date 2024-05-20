@@ -60,30 +60,30 @@
         .projectImageInvisible:hover {
             cursor: pointer;
         }
-    }
 
-    .projectPopupVisible {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 28rem;
-        width: 38rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-        z-index:800; 
-        cursor: pointer;
-    }
+        .projectPopupVisible {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            bottom: 28rem;
+            width: 38rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            z-index:800; 
+            cursor: pointer;
+        }
 
-    .projectPopupInvisible {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 28rem;
-        width: 38rem;
-        font-size: 1.25rem;
-        z-index: 20000;
+        .projectPopupInvisible {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            bottom: 28rem;
+            width: 38rem;
+            font-size: 1.25rem;
+            z-index: 20000;
+        }
     }
 }
 
@@ -123,12 +123,12 @@
             .projectImageInvisible {
                 width: 25rem;
             }
-        }
 
-        .projectPopupVisible {
-            font-size: .9rem;
-            width: 22rem;
-            bottom: 20rem;
+            .projectPopupVisible {
+                font-size: .9rem;
+                width: 22rem;
+                bottom: 20rem;
+            }
         }
     }
 }

@@ -8,7 +8,6 @@
     align-items: center;
     font-family: 'Montserrat', serif;
 
-
     .aboutHeadline {
         font-weight: normal;
     }
@@ -51,7 +50,6 @@
                 min-width: 17rem;
                 border-radius: 70px;
                 box-shadow: 5px 5px 5px 5px skyblue;
-           
             }
         }
             .aboutCaption {
@@ -61,7 +59,6 @@
         }
 
         .aboutQuoteAndStrengths {
-
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -96,7 +93,6 @@
             }
         }
     }
-    
 }
 
 @media screen and (width < 40rem) {
@@ -107,6 +103,5 @@
     }
     .aboutQuote {
         margin-left: 2rem;
-
     }
 }

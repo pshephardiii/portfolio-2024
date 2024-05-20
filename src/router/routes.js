@@ -2,7 +2,6 @@ import HomePage from '../pages/HomePage/HomePage'
 import AboutPage from '../pages/AboutPage/AboutPage'
 import ProjectsPage from '../pages/ProjectsPage/ProjectsPage'
 import ContactPage from '../pages/ContactPage/ContactPage'
-import ProjectShowPage from '../pages/ProjectShowPage/ProjectShowPage'
 
 const routes = [
     {
@@ -24,11 +23,6 @@ const routes = [
         Component: ContactPage,
         key: 'Contact',
         path: '/contact'
-    },
-    {
-        Component: ProjectShowPage,
-        key: 'Project',
-        path: '/projects/:id'
     }
 ]
 

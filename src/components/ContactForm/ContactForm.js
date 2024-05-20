@@ -12,18 +12,17 @@ export default function ContactForm(){
 
     const [ toggle, setToggle ] = useState(true)
 
-
     const handleSubmit = async (e) => {
         e.preventDefault()
         if (formData.name !== '' && formData.email !== '') {
-        try {
-            await contactsAPI.createContact(formData)
-            setToggle(false)
+            try {
+                await contactsAPI.createContact(formData)
+                setToggle(false)
 
-        } catch (error) {
-           console.error(error)
-        }
-    } else { alert('Please leave a name and email if you would like to reach out. Thank you!')}
+            } catch (error) {
+                console.error(error)
+            }
+        } else { alert('Please leave a name and email if you would like to reach out. Thank you!') }
     }
 
     const handleChange = (e) => {
@@ -36,7 +35,6 @@ export default function ContactForm(){
         }
         toggleTrue()
     }, [])
-
 
     return(
         <div className={styles.ContactForm}>

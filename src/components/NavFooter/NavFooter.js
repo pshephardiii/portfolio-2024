@@ -8,6 +8,5 @@ export default function NavFooter(){
             <a href='https://github.com/pshephardiii' className={styles.footerLink} target="_blank"><img src='https://i.imgur.com/wVqeaFz.png' title='GitHub' className={styles.footerIcon}></img></a>
             <a href='https://www.linkedin.com/in/paulshephard76/' className={styles.footerLink} target="_blank"><img src='https://i.imgur.com/gLaHV9t.png' title='LinkedIn' className={styles.footerIcon}></img></a>
         </div>
-        
     )
 }
