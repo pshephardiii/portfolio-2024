@@ -8,6 +8,7 @@ export default function ProjectList(){
     const [toggle0, setToggle0 ] = useState(true) 
     const [toggle1, setToggle1 ] = useState(true) 
     const [toggle2, setToggle2 ] = useState(true) 
+    const [toggle3, setToggle3 ] = useState(true)
 
     const imageClass0 = toggle0 ? `${styles.projectImageVisible}` : `${styles.projectImageInvisible}`
     const popupClass0 = toggle0 ? `${styles.projectPopupInvisible}` : `${styles.projectPopupVisible}`
@@ -17,6 +18,9 @@ export default function ProjectList(){
 
     const imageClass2 = toggle2 ? `${styles.projectImageVisible}` : `${styles.projectImageInvisible}`
     const popupClass2 = toggle2 ? `${styles.projectPopupInvisible}` : `${styles.projectPopupVisible}`
+
+    const imageClass3 = toggle3 ? `${styles.projectImageVisible}` : `${styles.projectImageInvisible}`
+    const popupClass3 = toggle3 ? `${styles.projectPopupInvisible}` : `${styles.projectPopupVisible}`
 
     useEffect(function(){
         async function getProjects(){
@@ -40,6 +44,10 @@ export default function ProjectList(){
 
    async function togglePopup2() {
     setToggle2(!toggle2)
+   }
+
+   async function togglePopup3() {
+    setToggle3(!toggle3)
    }
   
     if (projects.length !== 0) {
@@ -74,6 +82,16 @@ export default function ProjectList(){
                     <div className={popupClass2} onClick={togglePopup2}>
                         <p className={styles.projectTools}>{projects[2].tools}</p>
                         <p className={styles.projectDecription}>{projects[2].description}</p>
+                    </div>
+                </div>
+                <div className={styles.projectContainer}>
+                    <h3 className={styles.projectName}>{projects[3].name}</h3>
+                    <p className={styles.projectLinks}><a href={projects[3].liveProjectLink} target='_blank' className={styles.link}>Live Project</a> --- <a href={projects[3].githubLink} target='_blank' className={styles.link}>GitHub Repo</a></p>
+                    <img src={projects[3].image} className={imageClass3} onClick={togglePopup3}></img>
+                    <p className={styles.projectSummary}>{projects[3].summary}</p>
+                    <div className={popupClass3} onClick={togglePopup3}>
+                        <p className={styles.projectTools}>{projects[3].tools}</p>
+                        <p className={styles.projectDecription}>{projects[3].description}</p>
                     </div>
                 </div>
             </div>

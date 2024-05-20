@@ -282,12 +282,15 @@ function ProjectList() {
   const [toggle0, setToggle0] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const [toggle1, setToggle1] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const [toggle2, setToggle2] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
+  const [toggle3, setToggle3] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);
   const imageClass0 = toggle0 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
   const popupClass0 = toggle0 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
   const imageClass1 = toggle1 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
   const popupClass1 = toggle1 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
   const imageClass2 = toggle2 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
   const popupClass2 = toggle2 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
+  const imageClass3 = toggle3 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageVisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectImageInvisible);
+  const popupClass3 = toggle3 ? "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupInvisible) : "".concat(_ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectPopupVisible);
   (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
     async function getProjects() {
       try {
@@ -307,6 +310,9 @@ function ProjectList() {
   }
   async function togglePopup2() {
     setToggle2(!toggle2);
+  }
+  async function togglePopup3() {
+    setToggle3(!toggle3);
   }
   if (projects.length !== 0) {
     return /*#__PURE__*/React.createElement("div", {
@@ -392,7 +398,34 @@ function ProjectList() {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
     }, projects[2].tools), /*#__PURE__*/React.createElement("p", {
       className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectDecription
-    }, projects[2].description))));
+    }, projects[2].description))), /*#__PURE__*/React.createElement("div", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectContainer
+    }, /*#__PURE__*/React.createElement("h3", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectName
+    }, projects[3].name), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectLinks
+    }, /*#__PURE__*/React.createElement("a", {
+      href: projects[3].liveProjectLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "Live Project"), " --- ", /*#__PURE__*/React.createElement("a", {
+      href: projects[3].githubLink,
+      target: "_blank",
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link
+    }, "GitHub Repo")), /*#__PURE__*/React.createElement("img", {
+      src: projects[3].image,
+      className: imageClass3,
+      onClick: togglePopup3
+    }), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectSummary
+    }, projects[3].summary), /*#__PURE__*/React.createElement("div", {
+      className: popupClass3,
+      onClick: togglePopup3
+    }, /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectTools
+    }, projects[3].tools), /*#__PURE__*/React.createElement("p", {
+      className: _ProjectList_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].projectDecription
+    }, projects[3].description))));
   }
 }
 
@@ -2848,4 +2881,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.96b0c7f6292d37e574a2f1d010c37cd6.js.map
+//# sourceMappingURL=App.e9421968597bae9f39a310df254f38d5.js.map
