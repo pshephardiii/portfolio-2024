@@ -15,7 +15,7 @@ https://portfolio.paulshephard.me/home
 ## Screenshots
 
 ### Home Page
-![Home Page Screenshot](https://i.imgur.com/ZauU56G.png)
+![Home Page Screenshot](https://i.imgur.com/K7eCnJD.png)
 
 ### About Page
 ![About Page Screenshot](https://i.imgur.com/zgz4nJj.png)
