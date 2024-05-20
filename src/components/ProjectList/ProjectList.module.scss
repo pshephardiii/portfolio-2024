@@ -24,6 +24,7 @@
         .projectSummary {
             font-size: 1.5rem;
             text-align: center;
+            width: 40rem;
         }
 
         .projectLinks {
@@ -83,11 +84,10 @@
         width: 38rem;
         font-size: 1.25rem;
         z-index: 20000;
-        
     }
 }
 
-@media screen and (width < 45rem) {
+@media screen and (width < 55rem) {
     .ProjectList {
         display: flex;
         flex-direction: column;
@@ -109,6 +109,7 @@
                 font-size: 1rem;
                 margin-right: 2.5rem;
                 margin-left: 2.5rem;
+                width: 22rem;
             }
 
             .projectLinks {
@@ -132,47 +133,3 @@
     }
 }
 
-@media screen and (width > 70rem) {
-    .ProjectList {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-
-        .projectContainer {
-            width: 90vw;
-            height: auto;
-            margin: 0 2rem;
-
-            .projectName {
-                font-size: 3vw;
-                margin-right: 2rem;
-                margin-left: 2rem;
-            }
-
-            .projectSummary {
-                font-size: 2.5vw;
-                margin-right: 2.5rem;
-                margin-left: 2.5rem;
-            }
-
-            .projectLinks {
-                font-size: 2.5vw;
-            }
-
-            .projectImageVisible {
-                width: 80vw;
-            }
-
-            .projectImageInvisible {
-                width: 80vw;
-            }
-        }
-
-        .projectPopupVisible {
-            font-size: 2.5vw;
-            width: 75vw;
-            bottom: 55vw;
-        }
-    }
-}
