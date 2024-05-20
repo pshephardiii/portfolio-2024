@@ -12,7 +12,7 @@ export default function HomePage(){
                     <h2 className={styles.homeDescription}>A Philosopher Turned Coder</h2>
                     <AttributesList className={styles.attList}></AttributesList>
                 </div>
-                <img src='https://i.imgur.com/yZqYVPi.png' className={styles.profileImage}></img>
+                <img src='https://i.imgur.com/baZyo9G.png' className={styles.profileImage}></img>
             </div>
             <p className={styles.footerNod}>For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!</p>
             <div className={styles.experienceLists}>

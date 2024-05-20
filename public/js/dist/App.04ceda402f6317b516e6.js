@@ -627,7 +627,7 @@ function HomePage() {
   }, "A Philosopher Turned Coder"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].attList
   })), /*#__PURE__*/React.createElement("img", {
-    src: "https://i.imgur.com/yZqYVPi.png",
+    src: "https://i.imgur.com/baZyo9G.png",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].profileImage
   })), /*#__PURE__*/React.createElement("p", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].footerNod
@@ -2848,4 +2848,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.b5ec0e5d0bf3c73b0514a5acc940b96a.js.map
+//# sourceMappingURL=App.329f85e3cc9e1bff6a32d6b6389aada3.js.map
