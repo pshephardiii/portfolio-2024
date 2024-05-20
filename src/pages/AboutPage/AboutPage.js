@@ -23,7 +23,7 @@ export default function AboutPage(){
                 </div>
             </div>
             <div className={styles.aboutSummary}>
-                <p className={styles.aboutResumeLink}>To take a look at my resume, click <a href='https://jmp.sh/0Ftmc9xR' target='_blank'>here!</a></p>
+                <p className={styles.aboutResumeLink}>To take a look at my resume, click <a href='https://jmp.sh/zVKiXsnt' target='_blank'>here!</a></p>
                 
                 <p>I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!).</p>
 

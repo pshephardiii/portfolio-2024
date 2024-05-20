@@ -205,7 +205,7 @@ function NavFooter() {
   }, /*#__PURE__*/React.createElement("p", {
     className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Copyright
   }, "\xA9 Paul Shephard 2024"), /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _NavFooter_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].footerLink,
     target: "_blank"
   }, /*#__PURE__*/React.createElement("img", {
@@ -562,7 +562,7 @@ function AboutPage() {
   }, /*#__PURE__*/React.createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].aboutResumeLink
   }, "To take a look at my resume, click ", /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     target: "_blank"
   }, "here!")), /*#__PURE__*/React.createElement("p", null, "I've spent a majority of my life in higher education earning a Bachelor's, Master's, and PhD in Philosophy (although I double-majored in Economics as an undergraduate!)."), /*#__PURE__*/React.createElement("p", null, "While I've ultimately decided to part ways with academia, I've learned a lot through my experiences that can be applied to, and benefit, the wonderful world of tech."), /*#__PURE__*/React.createElement("p", null, "My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways."), /*#__PURE__*/React.createElement("p", null, "My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital \"nudging,\" and the use of algorithms to determine content viewability."), /*#__PURE__*/React.createElement("p", null, "My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action."), /*#__PURE__*/React.createElement("p", null, " Finally, my familiarity with professional conference presentations has drastically improved my public speaking skills, confidence, and my ability to \"read a room.\""), /*#__PURE__*/React.createElement("p", null, "It's been a long journey to get to where I am, but I'm thrilled to be able to apply a unique set of skills to the software development landscape!"))));
 }
@@ -638,37 +638,37 @@ function HomePage() {
   }, /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "500+ hours of Software Engineering Bootcamp at General Assembly")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "Background in Academic Research and Education")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "Granted Full-Stack Unit MVP and Cleanest Code Award")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "Expertise includes Formal Logic and Digital Ethics")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "Served as Team Leader and GitHub Manager")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://jmp.sh/0Ftmc9xR",
+    href: "https://jmp.sh/zVKiXsnt",
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
     target: "_blank"
   }, "300+ students taught with a 90% approval rate")))), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
@@ -2848,4 +2848,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.329f85e3cc9e1bff6a32d6b6389aada3.js.map
+//# sourceMappingURL=App.96b0c7f6292d37e574a2f1d010c37cd6.js.map
