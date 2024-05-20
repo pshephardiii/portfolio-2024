@@ -26,17 +26,14 @@
             margin-left: 2rem;
 
             .homeName {
-                text-shadow: 2px 2px 2px white;
                 text-align: center;
             }
 
             .homeTitle {
-                text-shadow: 2px 2px 2px white;
                 text-align: center;
             }
 
             .homeDescription {
-                font-family: "Philosopher", sans-serif;
                 text-align: center;
             }
         }
@@ -74,18 +71,26 @@
             column-gap: 2rem;
             align-content: flex-start;
             padding: 0;
-            
+
             .homeListItem {
                 margin-bottom: 2rem;
+                width: 30vw;
                 font-size: 1.5rem;
                 background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
-                padding: 1rem;
                 border-radius: 10px;
                 box-shadow: 2px 2px 2px 2px black;
                 color: black;
                 text-shadow: 1px 1px 1px white;
-                
                 justify-self: center;
+                display: flex;
+                align-items: stretch;
+
+                .listItemLink {
+                    color: black;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 1rem;
+                }
             }
         }
     }

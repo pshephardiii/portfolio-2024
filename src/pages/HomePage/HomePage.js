@@ -9,7 +9,7 @@ export default function HomePage(){
                 <div className={styles.topLeftMaterial}>
                     <h1 className={styles.homeName}>Paul Shephard</h1>
                     <h2 className={styles.homeTitle}>Full-Stack Software Developer</h2>
-                    <h3 className={styles.homeDescription}>A PHILOSOPHER TURNED CODER</h3>
+                    <h2 className={styles.homeDescription}>A Philosopher Turned Coder</h2>
                     <AttributesList className={styles.attList}></AttributesList>
                 </div>
                 <img src='https://i.imgur.com/yZqYVPi.png' className={styles.profileImage}></img>
@@ -17,12 +17,12 @@ export default function HomePage(){
             <p className={styles.footerNod}>For my Resume, GitHub, and LinkedIn Profile, please click on the icons in the footer below!</p>
             <div className={styles.experienceLists}>
                 <ul className={styles.homeList}>
-                    <li className={styles.homeListItem}>500+ hours of Software Engineering Bootcamp at General Assembly</li>
-                    <li className={styles.homeListItem}>Background in Academic Research and Education</li>
-                    <li className={styles.homeListItem}>Granted Full-Stack Unit MVP and Cleanest Code Award</li>
-                    <li className={styles.homeListItem}>Expertise includes Formal Logic and Digital Ethics</li>
-                    <li className={styles.homeListItem}>Served as Team Leader and GitHub Manager</li>
-                    <li className={styles.homeListItem}>300+ students taught with a 90% recommendation rate</li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>500+ hours of Software Engineering Bootcamp at General Assembly</a></li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>Background in Academic Research and Education</a></li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>Granted Full-Stack Unit MVP and Cleanest Code Award</a></li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>Expertise includes Formal Logic and Digital Ethics</a></li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>Served as Team Leader and GitHub Manager</a></li>
+                    <li className={styles.homeListItem}><a href='https://jmp.sh/0Ftmc9xR' className={styles.listItemLink} target='_blank'>300+ students taught with a 90% approval rate</a></li>
                 </ul>
             </div>
             <SkillList></SkillList>

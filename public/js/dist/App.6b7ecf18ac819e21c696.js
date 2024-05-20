@@ -622,9 +622,9 @@ function HomePage() {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeName
   }, "Paul Shephard"), /*#__PURE__*/React.createElement("h2", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeTitle
-  }, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("h3", {
+  }, "Full-Stack Software Developer"), /*#__PURE__*/React.createElement("h2", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeDescription
-  }, "A PHILOSOPHER TURNED CODER"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "A Philosopher Turned Coder"), /*#__PURE__*/React.createElement(_components_AttributesList_AttributesList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].attList
   })), /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/yZqYVPi.png",
@@ -637,17 +637,41 @@ function HomePage() {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeList
   }, /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "500+ hours of Software Engineering Bootcamp at General Assembly"), /*#__PURE__*/React.createElement("li", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "500+ hours of Software Engineering Bootcamp at General Assembly")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Background in Academic Research and Education"), /*#__PURE__*/React.createElement("li", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "Background in Academic Research and Education")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Granted Full-Stack Unit MVP and Cleanest Code Award"), /*#__PURE__*/React.createElement("li", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "Granted Full-Stack Unit MVP and Cleanest Code Award")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Expertise includes Formal Logic and Digital Ethics"), /*#__PURE__*/React.createElement("li", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "Expertise includes Formal Logic and Digital Ethics")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "Served as Team Leader and GitHub Manager"), /*#__PURE__*/React.createElement("li", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "Served as Team Leader and GitHub Manager")), /*#__PURE__*/React.createElement("li", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].homeListItem
-  }, "300+ students taught with a 90% recommendation rate"))), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://jmp.sh/0Ftmc9xR",
+    className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].listItemLink,
+    target: "_blank"
+  }, "300+ students taught with a 90% approval rate")))), /*#__PURE__*/React.createElement(_components_SkillList_SkillList__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 }
 
 /***/ }),
@@ -1714,15 +1738,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   margin-left: 2rem;
 }
 .luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .Aw5sO1dBoOHwTQxLLb2m {
-  text-shadow: 2px 2px 2px white;
   text-align: center;
 }
 .luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .pH3hxSOBP1V_K2z2Qfsi {
-  text-shadow: 2px 2px 2px white;
   text-align: center;
 }
 .luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .KAdFYwUkxuH3AfGOPQF8 .faqTb21Nz7osoFxnsTb4 {
-  font-family: "Philosopher", sans-serif;
   text-align: center;
 }
 .luBJirBC3AbIwQNsEypk .I69qLupTb0lXMgtHVWRj .SdE0OzVYSyWibKlylqhD {
@@ -1756,14 +1777,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
 }
 .luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ {
   margin-bottom: 2rem;
+  width: 30vw;
   font-size: 1.5rem;
   background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);
-  padding: 1rem;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px black;
   color: black;
   text-shadow: 1px 1px 1px white;
   justify-self: center;
+  display: flex;
+  align-items: stretch;
+}
+.luBJirBC3AbIwQNsEypk .agtVcU5x6yqGpyvpV7G0 .S1HmR7yheTytiIHpiMGB .eLxNMbsTFENT7X9xuYCQ .u2xsV1IYg9PNTOr9C0dI {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
 }
 
 @media screen and (width > 70rem) {
@@ -1822,7 +1851,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.luBJirBC3AbIwQNsEypk {
   footerNod {
     font-size: 1rem !important;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;EACA,iBAAA;AAAZ;AAEY;EACI,8BAAA;EACA,kBAAA;AAAhB;AAGY;EACI,8BAAA;EACA,kBAAA;AADhB;AAIY;EACI,sCAAA;EACA,kBAAA;AAFhB;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,kCAAA;EACA,mEAAA;AAJZ;AAWI;EACI,iBAAA;EACA,kBAAA;EACA,kBAAA;AATR;AAYI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAVR;AAYQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AAVZ;AAYY;EACI,mBAAA;EACA,iBAAA;EACA,mEAAA;EACA,aAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EAEA,oBAAA;AAXhB;;AAiBA;EACI;IACI,yBAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,yBAAA;EAdN;AACF;AAiBA;EACI;IACI,iBAAA;EAfN;EAiBE;IACI,kBAAA;EAfN;EAiBE;IACI,eAAA;EAfN;EAiBE;IACI,oBAAA;EAfN;EAmBU;IACI,0BAAA;EAjBd;EAqBE;IACI,0BAAA;EAnBN;AACF;AAsBA;EACI;IACI,MAAA;EApBN;EAwBU;IACI,kBAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EA0BE;IACI,oBAAA;EAxBN;EA4BU;IACI,0BAAA;EA1Bd;EA8BE;IACI,0BAAA;EA5BN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 2rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            width: 40vw;\n            margin-left: 2rem;\n\n            .homeName {\n                text-shadow: 2px 2px 2px white;\n                text-align: center;\n            }\n\n            .homeTitle {\n                text-shadow: 2px 2px 2px white;\n                text-align: center;\n            }\n\n            .homeDescription {\n                font-family: \"Philosopher\", sans-serif;\n                text-align: center;\n            }\n        }\n\n        .profileImage {\n            height: 40vw;\n            min-height: 15rem;\n            margin: 2rem;\n            border-radius: 50%;\n            box-shadow: 2px 2px 10px 2px black;\n            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n            \n            \n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n        font-size: 1.25rem;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 2rem;\n                 column-gap: 2rem;\n            align-content: flex-start;\n            padding: 0;\n            \n            .homeListItem {\n                margin-bottom: 2rem;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                padding: 1rem;\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                \n                justify-self: center;\n            }\n        }\n    }\n}\n\n@media screen and (width > 70rem) {\n    .homeName {\n        font-size: 3vw !important\n    }\n    .homeTitle {\n        font-size: 2.5vw !important\n    }\n    .homeDescription {\n        font-size: 2.5vw !important\n    }\n    .footerNod {\n        font-size: 2vw !important\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .homeName {\n        font-size: 1.5rem;\n    }\n    .homeTitle {\n        font-size: 1.25rem;\n    }\n    .homeDescription {\n        font-size: 1rem;\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    .footerNod {\n        font-size: 1rem !important;\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .topLeftAndImage {\n        gap: 0;\n\n        .topLeftMaterial {\n\n            .homeName {\n                font-size: 1.25rem;\n            }\n            .homeTitle {\n                font-size: 1rem;\n            }\n            .homeDescription {\n                font-size: 1rem;\n            }\n        }\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    footerNod {\n        font-size: 1rem !important;\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/HomePage/HomePage.module.scss"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,gCAAA;EACA,iBAAA;EACA,kBAAA;AAAJ;AAEI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,SAAA;EACA,+BAAA;AAAR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,WAAA;EACA,iBAAA;AAAZ;AAEY;EACI,kBAAA;AAAhB;AAGY;EACI,kBAAA;AADhB;AAIY;EACI,kBAAA;AAFhB;AAMQ;EACI,YAAA;EACA,iBAAA;EACA,YAAA;EACA,kBAAA;EACA,kCAAA;EACA,mEAAA;AAJZ;AAWI;EACI,iBAAA;EACA,kBAAA;EACA,kBAAA;AATR;AAYI;EACI,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAVR;AAYQ;EACI,WAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;EACA,qBAAA;EACK,gBAAA;EACL,yBAAA;EACA,UAAA;AAVZ;AAYY;EACI,mBAAA;EACA,WAAA;EACA,iBAAA;EACA,mEAAA;EACA,mBAAA;EACA,iCAAA;EACA,YAAA;EACA,8BAAA;EACA,oBAAA;EACA,aAAA;EACA,oBAAA;AAVhB;AAYgB;EACI,YAAA;EACA,qBAAA;EACA,qBAAA;EACA,aAAA;AAVpB;;AAiBA;EACI;IACI,yBAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,2BAAA;EAdN;EAgBE;IACI,yBAAA;EAdN;AACF;AAiBA;EACI;IACI,iBAAA;EAfN;EAiBE;IACI,kBAAA;EAfN;EAiBE;IACI,eAAA;EAfN;EAiBE;IACI,oBAAA;EAfN;EAmBU;IACI,0BAAA;EAjBd;EAqBE;IACI,0BAAA;EAnBN;AACF;AAsBA;EACI;IACI,MAAA;EApBN;EAwBU;IACI,kBAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EAwBU;IACI,eAAA;EAtBd;EA0BE;IACI,oBAAA;EAxBN;EA4BU;IACI,0BAAA;EA1Bd;EA8BE;IACI,0BAAA;EA5BN;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\n.HomePage {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    font-family: 'Montserrat', serif;\n    margin-left: 3rem;\n    margin-right: 3rem;\n\n    .topLeftAndImage {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        gap: 2rem;\n        border-bottom: 4px dotted white;\n    \n        .topLeftMaterial {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            width: 40vw;\n            margin-left: 2rem;\n\n            .homeName {\n                text-align: center;\n            }\n\n            .homeTitle {\n                text-align: center;\n            }\n\n            .homeDescription {\n                text-align: center;\n            }\n        }\n\n        .profileImage {\n            height: 40vw;\n            min-height: 15rem;\n            margin: 2rem;\n            border-radius: 50%;\n            box-shadow: 2px 2px 10px 2px black;\n            background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n            \n            \n        }\n\n    }\n\n    .footerNod {\n        font-weight: bold;\n        text-align: center;\n        font-size: 1.25rem;\n    }\n\n    .experienceLists {\n        width: 90vw;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n\n        .homeList {\n            width: 90vw;\n            list-style: none;\n            display: grid;\n            grid-template-columns: 1fr 1fr;\n            -moz-column-gap: 2rem;\n                 column-gap: 2rem;\n            align-content: flex-start;\n            padding: 0;\n\n            .homeListItem {\n                margin-bottom: 2rem;\n                width: 30vw;\n                font-size: 1.5rem;\n                background-image: linear-gradient(to bottom left, #FFFDD0, #e3be9b);\n                border-radius: 10px;\n                box-shadow: 2px 2px 2px 2px black;\n                color: black;\n                text-shadow: 1px 1px 1px white;\n                justify-self: center;\n                display: flex;\n                align-items: stretch;\n\n                .listItemLink {\n                    color: black;\n                    text-decoration: none;\n                    display: inline-block;\n                    padding: 1rem;\n                }\n            }\n        }\n    }\n}\n\n@media screen and (width > 70rem) {\n    .homeName {\n        font-size: 3vw !important\n    }\n    .homeTitle {\n        font-size: 2.5vw !important\n    }\n    .homeDescription {\n        font-size: 2.5vw !important\n    }\n    .footerNod {\n        font-size: 2vw !important\n    }\n}\n\n@media screen and (width < 40rem) and (width > 30rem) {\n    .homeName {\n        font-size: 1.5rem;\n    }\n    .homeTitle {\n        font-size: 1.25rem;\n    }\n    .homeDescription {\n        font-size: 1rem;\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    .footerNod {\n        font-size: 1rem !important;\n    }\n}\n\n@media screen and (width <= 30rem) {\n    .topLeftAndImage {\n        gap: 0;\n\n        .topLeftMaterial {\n\n            .homeName {\n                font-size: 1.25rem;\n            }\n            .homeTitle {\n                font-size: 1rem;\n            }\n            .homeDescription {\n                font-size: 1rem;\n            }\n        }\n    }\n    .experienceLists {\n        gap: 2rem !important;\n\n        .homeList {\n            \n            .homeListItem {\n                font-size: 1rem !important;\n            }\n        }\n    }\n    footerNod {\n        font-size: 1rem !important;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"HomePage": `luBJirBC3AbIwQNsEypk`,
@@ -1835,7 +1864,8 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"footerNod": `bIC53aZ1YbYkKKHJLNZV`,
 	"experienceLists": `agtVcU5x6yqGpyvpV7G0`,
 	"homeList": `S1HmR7yheTytiIHpiMGB`,
-	"homeListItem": `eLxNMbsTFENT7X9xuYCQ`
+	"homeListItem": `eLxNMbsTFENT7X9xuYCQ`,
+	"listItemLink": `u2xsV1IYg9PNTOr9C0dI`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2852,4 +2882,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.2e1b51d03ffb3bfcc5be0900d6fbaf26.js.map
+//# sourceMappingURL=App.5fac69a65d448d707cea3d3d27952069.js.map
