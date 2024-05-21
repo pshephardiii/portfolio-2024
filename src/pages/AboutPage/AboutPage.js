@@ -31,7 +31,7 @@ export default function AboutPage(){
 
                 <p>My background in classical logic has helped me learn logic-based coding languages (like Javascript!) much easier and allows me to solve problems in creative and novel ways.</p>
 
-                <p>My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grabble with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital "nudging," and the use of algorithms to determine content viewability.</p>
+                <p>My primary research area, which centered on the philosophy and epistemology of information transmission on social media, forced me to grapple with tough practical and ethical issues facing the digital world, including the ethics of data mining and profiling, digital "nudging," and the use of algorithms to determine content viewability.</p>
 
                 <p>My teaching experience taught me organization, patience, clarity of explanation, interpersonal skills, and, most importantly, how to tackle unforeseen challenges with quick-thinking and decisive action.</p>
 
